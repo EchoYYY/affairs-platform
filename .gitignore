@@ -1,0 +1,17 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+backend/.env
+
+# Data / DB (regenerable from the corpus)
+backend/data/*.db
+backend/data/*.db-wal
+backend/data/*.db-shm
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
