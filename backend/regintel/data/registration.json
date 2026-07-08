@@ -1,0 +1,2901 @@
+{
+ "source": "Medical_Device_Timelines_and_Fees_Combined.xlsx",
+ "markets": [
+  {
+   "country": "Argentina",
+   "region": "Americas",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Registration)",
+     "official": "2-4 months",
+     "realistic": "4-6 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 4.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class II (Registration)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "FDA 510(k), EU CE Mark",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class III (Registration with clinical data)",
+     "official": "8-12 months",
+     "realistic": "1-1.5 years",
+     "accelerated": "8-12 months",
+     "prior_approval": "FDA 510(k)/PMA, EU CE Mark",
+     "low_m": 12.0,
+     "high_m": 18.0
+    },
+    {
+     "class_pathway": "Class IV (Full Registration)",
+     "official": "1-1.5 years",
+     "realistic": "1.5-2 years",
+     "accelerated": "1-1.3 years",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 18.0,
+     "high_m": 24.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Annual Maintenance - Class I",
+     "local": "ARS 39,500",
+     "usd_str": "$38",
+     "usd_num": 38.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "Annual Maintenance - Class II",
+     "local": "ARS 52,000",
+     "usd_str": "$49",
+     "usd_num": 49.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "Annual Maintenance - Class III",
+     "local": "ARS 70,000",
+     "usd_str": "$67",
+     "usd_num": 67.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "Annual Maintenance - Class IV",
+     "local": "ARS 93,000",
+     "usd_str": "$88",
+     "usd_num": 88.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "Transfer - Imported Product",
+     "local": "ARS 587,700",
+     "usd_str": "$558",
+     "usd_num": 558.0,
+     "notes": "Per transfer",
+     "upfront": false
+    },
+    {
+     "item": "Manufacturer/Importer Authorization",
+     "local": "ARS 1,529,400",
+     "usd_str": "$1,453",
+     "usd_num": 1453.0,
+     "notes": "One-time",
+     "upfront": true
+    },
+    {
+     "item": "GMP Verification - Foreign (Main)",
+     "local": "ARS 9,439,200",
+     "usd_str": "$8,967",
+     "usd_num": 8967.0,
+     "notes": "Per facility",
+     "upfront": false
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Registration)",
+    "display": "4-6 months",
+    "low_m": 4.0,
+    "high_m": 6.0
+   },
+   "cheapest": {
+    "item": "Manufacturer/Importer Authorization",
+    "usd_num": 1453.0,
+    "usd_str": "$1,453",
+    "local": "ARS 1,529,400"
+   }
+  },
+  {
+   "country": "Australia",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Notification)",
+     "official": "0-1 weeks",
+     "realistic": "0.5-1 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 0.5,
+     "high_m": 1.0
+    },
+    {
+     "class_pathway": "Class IIa (Conformity Assessment)",
+     "official": "1 month",
+     "realistic": "1-1.5 months",
+     "accelerated": "0.8-1 months",
+     "prior_approval": "EU CE Mark, FDA 510(k), MDSAP",
+     "low_m": 1.0,
+     "high_m": 1.5
+    },
+    {
+     "class_pathway": "Class IIb (Enhanced Assessment)",
+     "official": "1.5 months",
+     "realistic": "1.5-2 months",
+     "accelerated": "1-1.5 months",
+     "prior_approval": "EU CE Mark, FDA 510(k), MDSAP",
+     "low_m": 1.5,
+     "high_m": 2.0
+    },
+    {
+     "class_pathway": "Class III (Full Assessment)",
+     "official": "5-7.5 months",
+     "realistic": "6-9 months",
+     "accelerated": "3-5 months",
+     "prior_approval": "EU CE Mark (30-50% faster), FDA 510(k), MDSAP",
+     "low_m": 6.0,
+     "high_m": 9.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Annual Fee - Class I (other)",
+     "local": "AUD 114",
+     "usd_str": "$79",
+     "usd_num": 79.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "Annual Fee - Class I (measuring/sterile)",
+     "local": "AUD 828",
+     "usd_str": "$575",
+     "usd_num": 575.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "Annual Fee - Class IIa/IIb",
+     "local": "AUD 1,230",
+     "usd_str": "$855",
+     "usd_num": 855.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "Annual Fee - Class III/AIMD",
+     "local": "AUD 1,566",
+     "usd_str": "$1,088",
+     "usd_num": 1088.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "Application Fee - Class I",
+     "local": "AUD 621",
+     "usd_str": "$431",
+     "usd_num": 431.0,
+     "notes": "One-time per product",
+     "upfront": true
+    },
+    {
+     "item": "Application Fee - Class IIa/IIb",
+     "local": "AUD 1,187",
+     "usd_str": "$825",
+     "usd_num": 825.0,
+     "notes": "One-time per product",
+     "upfront": true
+    },
+    {
+     "item": "Application Fee - Class III",
+     "local": "AUD 1,530",
+     "usd_str": "$1,063",
+     "usd_num": 1063.0,
+     "notes": "One-time per product",
+     "upfront": true
+    },
+    {
+     "item": "IVD Annual Fee",
+     "local": "AUD 893",
+     "usd_str": "$620",
+     "usd_num": 620.0,
+     "notes": "Annual per product",
+     "upfront": false
+    },
+    {
+     "item": "IVD Application Fee",
+     "local": "AUD 1,187",
+     "usd_str": "$825",
+     "usd_num": 825.0,
+     "notes": "One-time per product",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Notification)",
+    "display": "0.5-1 months",
+    "low_m": 0.5,
+    "high_m": 1.0
+   },
+   "cheapest": {
+    "item": "Application Fee - Class I",
+    "usd_num": 431.0,
+    "usd_str": "$431",
+    "local": "AUD 621"
+   }
+  },
+  {
+   "country": "Bangladesh",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Notification)",
+     "official": "1-3 months",
+     "realistic": "2-5 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 2.0,
+     "high_m": 5.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "3-6 months",
+     "realistic": "4-9 months",
+     "accelerated": "3-6 months",
+     "prior_approval": "FDA, EU CE Mark",
+     "low_m": 4.0,
+     "high_m": 9.0
+    },
+    {
+     "class_pathway": "Class C (Registration)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "4-8 months",
+     "prior_approval": "FDA, EU CE Mark",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class D (Full Registration)",
+     "official": "6-12 months",
+     "realistic": "9-18 months",
+     "accelerated": "6-12 months",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 9.0,
+     "high_m": 18.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Registration - Class A",
+     "local": "Free",
+     "usd_str": "Free",
+     "usd_num": 0.0,
+     "notes": "Per registration \u00b7 No government fees",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class B/C/D",
+     "local": "BDT 63,250",
+     "usd_str": "$519",
+     "usd_num": 519.0,
+     "notes": "Per registration \u00b7 Includes 15% VAT",
+     "upfront": true
+    },
+    {
+     "item": "Renewal - Class B/C/D",
+     "local": "BDT 11,500",
+     "usd_str": "$94",
+     "usd_num": 94.0,
+     "notes": "Every 5 years",
+     "upfront": false
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Notification)",
+    "display": "2-5 months",
+    "low_m": 2.0,
+    "high_m": 5.0
+   },
+   "cheapest": {
+    "item": "Registration - Class A",
+    "usd_num": 0.0,
+    "usd_str": "Free",
+    "local": "Free"
+   }
+  },
+  {
+   "country": "Brazil",
+   "region": "Americas",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Notification)",
+     "official": "1 month",
+     "realistic": "1-1.5 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 1.0,
+     "high_m": 1.5
+    },
+    {
+     "class_pathway": "Class II (Notification)",
+     "official": "1 month",
+     "realistic": "1-1.5 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 1.0,
+     "high_m": 1.5
+    },
+    {
+     "class_pathway": "Class III (Registration)",
+     "official": "8-12 months",
+     "realistic": "1-11 months",
+     "accelerated": "8-12 months",
+     "prior_approval": "FDA 510(k)/PMA (via IN 290/2024), MDSAP for BGMP",
+     "low_m": 1.0,
+     "high_m": 11.0
+    },
+    {
+     "class_pathway": "Class IV (Registration)",
+     "official": "8-12 months",
+     "realistic": "1-11 months",
+     "accelerated": "10-14 months",
+     "prior_approval": "FDA 510(k)/PMA (via IN 290/2024), MDSAP for BGMP",
+     "low_m": 1.0,
+     "high_m": 11.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Notification Fee (Class I/II)",
+     "local": "BRL 1,406",
+     "usd_str": "$273",
+     "usd_num": 273.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Family (Class III/IV)",
+     "local": "BRL 8,510",
+     "usd_str": "$1,655",
+     "usd_num": 1655.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Large Family (Class III/IV)",
+     "local": "BRL 19,856",
+     "usd_str": "$3,862",
+     "usd_num": 3862.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "B-GMP Certification - International (Class III/IV)",
+     "local": "BRL 72,805",
+     "usd_str": "$14,161",
+     "usd_num": 14161.0,
+     "notes": "One-time per manufacturer \u00b7 Required for Class III/IV",
+     "upfront": false
+    },
+    {
+     "item": "B-GMP Certification - MERCOSUL (Class III/IV)",
+     "local": "BRL 10,637",
+     "usd_str": "$2,069",
+     "usd_num": 2069.0,
+     "notes": "One-time per manufacturer \u00b7 For MERCOSUL countries only",
+     "upfront": false
+    },
+    {
+     "item": "Procedural Review Fee",
+     "local": "BRL 1,406",
+     "usd_str": "$273",
+     "usd_num": 273.0,
+     "notes": "If applicable",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Notification)",
+    "display": "1-1.5 months",
+    "low_m": 1.0,
+    "high_m": 1.5
+   },
+   "cheapest": {
+    "item": "Notification Fee (Class I/II)",
+    "usd_num": 273.0,
+    "usd_str": "$273",
+    "local": "BRL 1,406"
+   }
+  },
+  {
+   "country": "Canada",
+   "region": "Americas",
+   "timelines": [
+    {
+     "class_pathway": "Class I (MDEL Only (no device license))",
+     "official": "4 months",
+     "realistic": "2-3 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 2.0,
+     "high_m": 3.0
+    },
+    {
+     "class_pathway": "Class II (Device License)",
+     "official": "2 weeks",
+     "realistic": "1-1.5 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 1.0,
+     "high_m": 1.5
+    },
+    {
+     "class_pathway": "Class III (Device License with clinical data)",
+     "official": "2.5 months",
+     "realistic": "3-4 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 3.0,
+     "high_m": 4.0
+    },
+    {
+     "class_pathway": "Class IV (Device License)",
+     "official": "3 months",
+     "realistic": "4-5 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 4.0,
+     "high_m": 5.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "MDL Application - Class II",
+     "local": "CAD 643",
+     "usd_str": "$452",
+     "usd_num": 452.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "MDL Application - Class III",
+     "local": "CAD 14,163",
+     "usd_str": "$9,961",
+     "usd_num": 9961.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "MDL Application - Class III (near patient)",
+     "local": "CAD 30,169",
+     "usd_str": "$21,219",
+     "usd_num": 21219.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "MDL Application - Class IV",
+     "local": "CAD 30,713",
+     "usd_str": "$21,601",
+     "usd_num": 21601.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "Establishment Licence (MDEL)",
+     "local": "TBD",
+     "usd_str": "TBD",
+     "usd_num": null,
+     "notes": "Annual \u00b7 Class I only",
+     "upfront": true
+    },
+    {
+     "item": "Annual Right to Sell",
+     "local": "TBD",
+     "usd_str": "TBD",
+     "usd_num": null,
+     "notes": "Annual \u00b7 Class II/III/IV",
+     "upfront": false
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class II (Device License)",
+    "display": "1-1.5 months",
+    "low_m": 1.0,
+    "high_m": 1.5
+   },
+   "cheapest": {
+    "item": "MDL Application - Class II",
+    "usd_num": 452.0,
+    "usd_str": "$452",
+    "local": "CAD 643"
+   }
+  },
+  {
+   "country": "China",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Filing/Recordation)",
+     "official": "1 week",
+     "realistic": "2-4 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 2.0,
+     "high_m": 4.0
+    },
+    {
+     "class_pathway": "Class II (Provincial Registration)",
+     "official": "4 months",
+     "realistic": "1-1.5 years",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 12.0,
+     "high_m": 18.0
+    },
+    {
+     "class_pathway": "Class III (NMPA Registration)",
+     "official": "5-6 months",
+     "realistic": "2-3 years",
+     "accelerated": "1.2-1.7 years",
+     "prior_approval": "Priority review for innovative devices, Hainan pilot",
+     "low_m": 24.0,
+     "high_m": 36.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Initial Registration - Class II",
+     "local": "CNY 210,900",
+     "usd_str": "$31,044",
+     "usd_num": 31044.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Initial Registration - Class III",
+     "local": "CNY 308,800",
+     "usd_str": "$45,455",
+     "usd_num": 45455.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Variation - Class II",
+     "local": "CNY 42,000",
+     "usd_str": "$6,182",
+     "usd_num": 6182.0,
+     "notes": "Per variation",
+     "upfront": true
+    },
+    {
+     "item": "Variation - Class III",
+     "local": "CNY 50,400",
+     "usd_str": "$7,419",
+     "usd_num": 7419.0,
+     "notes": "Per variation",
+     "upfront": true
+    },
+    {
+     "item": "Renewal - Class II/III",
+     "local": "CNY 40,800",
+     "usd_str": "$6,006",
+     "usd_num": 6006.0,
+     "notes": "Every 5 years",
+     "upfront": false
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Filing/Recordation)",
+    "display": "2-4 months",
+    "low_m": 2.0,
+    "high_m": 4.0
+   },
+   "cheapest": {
+    "item": "Variation - Class II",
+    "usd_num": 6182.0,
+    "usd_str": "$6,182",
+    "local": "CNY 42,000"
+   }
+  },
+  {
+   "country": "Colombia",
+   "region": "Americas",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Notification (NSO))",
+     "official": "2 days",
+     "realistic": "1-2 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 1.0,
+     "high_m": 2.0
+    },
+    {
+     "class_pathway": "Class IIa (Registration (NSO))",
+     "official": "2 days",
+     "realistic": "1-2 months",
+     "accelerated": "2-3 months",
+     "prior_approval": "EU CE Mark, Japan, TGA, Health Canada, FDA, MHRA, HSA",
+     "low_m": 1.0,
+     "high_m": 2.0
+    },
+    {
+     "class_pathway": "Class IIb (Registration (RSO))",
+     "official": "3 months",
+     "realistic": "6-12 months",
+     "accelerated": "4-6 months",
+     "prior_approval": "EU CE Mark, Japan, TGA, Health Canada, FDA, MHRA, HSA",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class III (Full Registration (RSO))",
+     "official": "3 months",
+     "realistic": "9-18 months",
+     "accelerated": "6-10 months",
+     "prior_approval": "EU CE Mark, Japan, TGA, Health Canada, FDA, MHRA, HSA",
+     "low_m": 9.0,
+     "high_m": 18.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "MD Application - Class I",
+     "local": "COP 3,898,330",
+     "usd_str": "$936",
+     "usd_num": 936.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "MD Application - Class IIa",
+     "local": "COP 3,898,330",
+     "usd_str": "$936",
+     "usd_num": 936.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "MD Application - Class IIb",
+     "local": "COP 4,412,400",
+     "usd_str": "$1,059",
+     "usd_num": 1059.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "MD Application - Class III",
+     "local": "COP 4,412,400",
+     "usd_str": "$1,059",
+     "usd_num": 1059.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "IVD Application - Class I/II",
+     "local": "COP 2,570,590",
+     "usd_str": "$617",
+     "usd_num": 617.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "IVD Application - Class III",
+     "local": "COP 3,427,327",
+     "usd_str": "$823",
+     "usd_num": 823.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Trademark Application",
+     "local": "COP 1,288,000 - 1,714,500",
+     "usd_str": "$309",
+     "usd_num": 309.0,
+     "notes": "Per application \u00b7 Range depending on type",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Notification (NSO))",
+    "display": "1-2 months",
+    "low_m": 1.0,
+    "high_m": 2.0
+   },
+   "cheapest": {
+    "item": "Trademark Application",
+    "usd_num": 309.0,
+    "usd_str": "$309",
+    "local": "COP 1,288,000 - 1,714,500"
+   }
+  },
+  {
+   "country": "Costa Rica",
+   "region": "Americas",
+   "timelines": [],
+   "fees": [
+    {
+     "item": "MD Registration - Class I",
+     "local": "Free",
+     "usd_str": "Free",
+     "usd_num": 0.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "MD Registration - Class II",
+     "local": "$25",
+     "usd_str": "$25",
+     "usd_num": 25.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "MD Registration - Class III",
+     "local": "$50",
+     "usd_str": "$50",
+     "usd_num": 50.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "MD Registration - Class IV",
+     "local": "$50",
+     "usd_str": "$50",
+     "usd_num": 50.0,
+     "notes": "Per registration",
+     "upfront": true
+    }
+   ],
+   "fastest": null,
+   "cheapest": {
+    "item": "MD Registration - Class I",
+    "usd_num": 0.0,
+    "usd_str": "Free",
+    "local": "Free"
+   }
+  },
+  {
+   "country": "Ecuador",
+   "region": "Americas",
+   "timelines": [],
+   "fees": [
+    {
+     "item": "MD/IVD Registration",
+     "local": "$905",
+     "usd_str": "$905",
+     "usd_num": 905.0,
+     "notes": "Per registration \u00b7 All classes",
+     "upfront": true
+    },
+    {
+     "item": "MD/IVD Renewal",
+     "local": "$185",
+     "usd_str": "$185",
+     "usd_num": 185.0,
+     "notes": "Per renewal \u00b7 All classes",
+     "upfront": false
+    }
+   ],
+   "fastest": null,
+   "cheapest": {
+    "item": "MD/IVD Registration",
+    "usd_num": 905.0,
+    "usd_str": "$905",
+    "local": "$905"
+   }
+  },
+  {
+   "country": "Egypt",
+   "region": "Middle East & Africa",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Notification)",
+     "official": "1-3 months",
+     "realistic": "2-4 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 2.0,
+     "high_m": 4.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "3-6 months",
+     "realistic": "4-9 months",
+     "accelerated": "3-5 months",
+     "prior_approval": "FDA, EU CE Mark",
+     "low_m": 4.0,
+     "high_m": 9.0
+    },
+    {
+     "class_pathway": "Class C (Registration)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "FDA 510(k), EU CE Mark",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class D (Full Registration)",
+     "official": "6-12 months",
+     "realistic": "9-18 months",
+     "accelerated": "6-10 months",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 9.0,
+     "high_m": 18.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Registration - Normal Track",
+     "local": "EGP 10,005",
+     "usd_str": "$200",
+     "usd_num": 200.0,
+     "notes": "Per registration \u00b7 MD & IVD all classes",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Fast Track",
+     "local": "EGP 20,005",
+     "usd_str": "$400",
+     "usd_num": 400.0,
+     "notes": "Per registration \u00b7 MD only",
+     "upfront": true
+    },
+    {
+     "item": "Bundling (2-25 files)",
+     "local": "EGP 25,005",
+     "usd_str": "$500",
+     "usd_num": 500.0,
+     "notes": "Per bundle \u00b7 IVD only",
+     "upfront": false
+    },
+    {
+     "item": "Bundling (2-100 files)",
+     "local": "EGP 55,000",
+     "usd_str": "$1,100",
+     "usd_num": 1100.0,
+     "notes": "Per bundle \u00b7 IVD only",
+     "upfront": false
+    },
+    {
+     "item": "Manufacturer Addition",
+     "local": "EGP 10,005",
+     "usd_str": "$200",
+     "usd_num": 200.0,
+     "notes": "Per manufacturer",
+     "upfront": true
+    },
+    {
+     "item": "Major Variation - Fast Track",
+     "local": "EGP 12,000",
+     "usd_str": "$240",
+     "usd_num": 240.0,
+     "notes": "Per variation",
+     "upfront": true
+    },
+    {
+     "item": "Major Variation - Normal Track",
+     "local": "EGP 6,000",
+     "usd_str": "$120",
+     "usd_num": 120.0,
+     "notes": "Per variation",
+     "upfront": true
+    },
+    {
+     "item": "Minor Variation - Fast Track",
+     "local": "EGP 4,000",
+     "usd_str": "$80",
+     "usd_num": 80.0,
+     "notes": "Per variation",
+     "upfront": true
+    },
+    {
+     "item": "Minor Variation - Normal Track",
+     "local": "EGP 2,000",
+     "usd_str": "$40",
+     "usd_num": 40.0,
+     "notes": "Per variation",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Notification)",
+    "display": "2-4 months",
+    "low_m": 2.0,
+    "high_m": 4.0
+   },
+   "cheapest": {
+    "item": "Minor Variation - Normal Track",
+    "usd_num": 40.0,
+    "usd_str": "$40",
+    "local": "EGP 2,000"
+   }
+  },
+  {
+   "country": "European Union",
+   "region": "Europe",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Self-certification)",
+     "official": "3-6 months",
+     "realistic": "6-9 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 6.0,
+     "high_m": 9.0
+    },
+    {
+     "class_pathway": "Class IIa (Notified Body certification)",
+     "official": "8-12 months",
+     "realistic": "1.1-1.5 years",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 13.2,
+     "high_m": 18.0
+    },
+    {
+     "class_pathway": "Class IIb (Notified Body certification)",
+     "official": "1-1.5 years",
+     "realistic": "1.3-2 years",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 15.6,
+     "high_m": 24.0
+    },
+    {
+     "class_pathway": "Class III (Full Notified Body review)",
+     "official": "1.5-2 years",
+     "realistic": "2-3 years",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 24.0,
+     "high_m": 36.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "EUDAMED Registration",
+     "local": "Free",
+     "usd_str": "Free",
+     "usd_num": 0.0,
+     "notes": "Per registration \u00b7 No government fee",
+     "upfront": true
+    },
+    {
+     "item": "Device Listing (Class II-IV)",
+     "local": "Free",
+     "usd_str": "Free",
+     "usd_num": 0.0,
+     "notes": "Per listing \u00b7 Voluntary system",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Self-certification)",
+    "display": "6-9 months",
+    "low_m": 6.0,
+    "high_m": 9.0
+   },
+   "cheapest": {
+    "item": "EUDAMED Registration",
+    "usd_num": 0.0,
+    "usd_str": "Free",
+    "local": "Free"
+   }
+  },
+  {
+   "country": "Hong Kong",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Listing)",
+     "official": "1-2 weeks",
+     "realistic": "0.5-1 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 0.5,
+     "high_m": 1.0
+    },
+    {
+     "class_pathway": "Class II (Listing)",
+     "official": "1-2 months",
+     "realistic": "1-3 months",
+     "accelerated": "0.5-1 months",
+     "prior_approval": "FDA, EU CE Mark, Health Canada, Australia TGA, Japan PMDA",
+     "low_m": 1.0,
+     "high_m": 3.0
+    },
+    {
+     "class_pathway": "Class III (Listing)",
+     "official": "2-4 months",
+     "realistic": "2-5 months",
+     "accelerated": "1-3 months",
+     "prior_approval": "FDA, EU CE Mark, Health Canada, Australia TGA, Japan PMDA",
+     "low_m": 2.0,
+     "high_m": 5.0
+    },
+    {
+     "class_pathway": "Class IV (Listing)",
+     "official": "3-6 months",
+     "realistic": "3-6 months",
+     "accelerated": "2-4 months",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 3.0,
+     "high_m": 6.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Registration / Listing (all classes)",
+     "local": "Free",
+     "usd_str": "Free",
+     "usd_num": 0.0,
+     "notes": "Per summary: free (no government registration fee); per-class fee rows not itemized in source",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Listing)",
+    "display": "0.5-1 months",
+    "low_m": 0.5,
+    "high_m": 1.0
+   },
+   "cheapest": {
+    "item": "Registration / Listing (all classes)",
+    "usd_num": 0.0,
+    "usd_str": "Free",
+    "local": "Free"
+   }
+  },
+  {
+   "country": "India",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Registration)",
+     "official": "3-6 months",
+     "realistic": "6-9 months",
+     "accelerated": "3-5 months",
+     "prior_approval": "GHTF country approval (FDA, EU, Japan, Australia, UK)",
+     "low_m": 6.0,
+     "high_m": 9.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "4-8 months",
+     "realistic": "8-12 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "GHTF country approval",
+     "low_m": 8.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class C (Registration with clinical data)",
+     "official": "6-12 months",
+     "realistic": "1-1.5 years",
+     "accelerated": "6-9 months",
+     "prior_approval": "GHTF country approval with predicate",
+     "low_m": 12.0,
+     "high_m": 18.0
+    },
+    {
+     "class_pathway": "Class D (Registration with extensive clinical)",
+     "official": "8-15 months",
+     "realistic": "1.3-2 years",
+     "accelerated": "8-12 months",
+     "prior_approval": "GHTF country approval",
+     "low_m": 15.6,
+     "high_m": 24.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Notification Fee - Class A",
+     "local": "$1,000",
+     "usd_str": "$1,000",
+     "usd_num": 1000.0,
+     "notes": "Per notification",
+     "upfront": true
+    },
+    {
+     "item": "Notification Fee - Class A (Family)",
+     "local": "$50",
+     "usd_str": "$50",
+     "usd_num": 50.0,
+     "notes": "Per additional device",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class B",
+     "local": "$2,000",
+     "usd_str": "$2,000",
+     "usd_num": 2000.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class B (Family)",
+     "local": "$1,000",
+     "usd_str": "$1,000",
+     "usd_num": 1000.0,
+     "notes": "Per additional device",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class C",
+     "local": "$3,000",
+     "usd_str": "$3,000",
+     "usd_num": 3000.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class C (Family)",
+     "local": "$1,500",
+     "usd_str": "$1,500",
+     "usd_num": 1500.0,
+     "notes": "Per additional device",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class D",
+     "local": "$3,000",
+     "usd_str": "$3,000",
+     "usd_num": 3000.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class D (Family)",
+     "local": "$1,500",
+     "usd_str": "$1,500",
+     "usd_num": 1500.0,
+     "notes": "Per additional device",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Registration)",
+    "display": "6-9 months",
+    "low_m": 6.0,
+    "high_m": 9.0
+   },
+   "cheapest": {
+    "item": "Notification Fee - Class A (Family)",
+    "usd_num": 50.0,
+    "usd_str": "$50",
+    "local": "$50"
+   }
+  },
+  {
+   "country": "Indonesia",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Notification)",
+     "official": "1-2 months",
+     "realistic": "2-4 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 2.0,
+     "high_m": 4.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "4-5 months",
+     "realistic": "4-6 months",
+     "accelerated": "-",
+     "prior_approval": "ASEAN MRA countries, FDA, EU CE Mark",
+     "low_m": 4.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class C (Full Registration)",
+     "official": "4-5 months",
+     "realistic": "4-6 months",
+     "accelerated": "-",
+     "prior_approval": "ASEAN MRA countries, FDA, EU CE Mark",
+     "low_m": 4.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class D (Full Registration)",
+     "official": "5 months",
+     "realistic": "5-7 months",
+     "accelerated": "-",
+     "prior_approval": "ASEAN MRA countries, FDA, EU CE Mark",
+     "low_m": 5.0,
+     "high_m": 7.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Registration - Class A",
+     "local": "IDR 1,500,000",
+     "usd_str": "$84",
+     "usd_num": 84.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class B",
+     "local": "IDR 3,000,000",
+     "usd_str": "$168",
+     "usd_num": 168.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class C",
+     "local": "IDR 3,000,000",
+     "usd_str": "$168",
+     "usd_num": 168.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class D",
+     "local": "IDR 5,000,000",
+     "usd_str": "$279",
+     "usd_num": 279.0,
+     "notes": "Per product",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Notification)",
+    "display": "2-4 months",
+    "low_m": 2.0,
+    "high_m": 4.0
+   },
+   "cheapest": {
+    "item": "Registration - Class A",
+    "usd_num": 84.0,
+    "usd_str": "$84",
+    "local": "IDR 1,500,000"
+   }
+  },
+  {
+   "country": "Israel",
+   "region": "Middle East & Africa",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Registration)",
+     "official": "1-2 months",
+     "realistic": "2-4 months",
+     "accelerated": "1-2 months",
+     "prior_approval": "FDA, EU CE Mark",
+     "low_m": 2.0,
+     "high_m": 4.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "2-4 months",
+     "realistic": "3-6 months",
+     "accelerated": "2-3 months",
+     "prior_approval": "FDA 510(k), EU CE Mark",
+     "low_m": 3.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class C (Registration with clinical data)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "3-6 months",
+     "prior_approval": "FDA 510(k), EU CE Mark",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class D (Full Registration)",
+     "official": "6-12 months",
+     "realistic": "9-18 months",
+     "accelerated": "5-10 months",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 9.0,
+     "high_m": 18.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Registration - Class I (all types)",
+     "local": "Free",
+     "usd_str": "Free",
+     "usd_num": 0.0,
+     "notes": "Per registration \u00b7 Class I fee waived",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class II/III",
+     "local": "TBD",
+     "usd_str": "TBD",
+     "usd_num": null,
+     "notes": "Per registration \u00b7 Not publicly available",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Registration)",
+    "display": "2-4 months",
+    "low_m": 2.0,
+    "high_m": 4.0
+   },
+   "cheapest": {
+    "item": "Registration - Class I (all types)",
+    "usd_num": 0.0,
+    "usd_str": "Free",
+    "local": "Free"
+   }
+  },
+  {
+   "country": "Japan",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Notification (Todokede))",
+     "official": "1 month",
+     "realistic": "1 month",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 1.0,
+     "high_m": 1.0
+    },
+    {
+     "class_pathway": "Class II (Certification (Ninsho) or Approval (Shonin))",
+     "official": "3-12 months",
+     "realistic": "5-17 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "MDSAP certification, Foreign clinical data (if GCP compliant)",
+     "low_m": 5.0,
+     "high_m": 17.0
+    },
+    {
+     "class_pathway": "Class III (Certification (Ninsho) or Approval (Shonin))",
+     "official": "3-12 months",
+     "realistic": "5-17 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "MDSAP certification, Foreign clinical data (if GCP compliant)",
+     "low_m": 5.0,
+     "high_m": 17.0
+    },
+    {
+     "class_pathway": "Class IV (Approval (Shonin))",
+     "official": "1-1.2 years",
+     "realistic": "1.5-2 years",
+     "accelerated": "1-2 years",
+     "prior_approval": "SAKIGAKE designation, MDSAP",
+     "low_m": 18.0,
+     "high_m": 24.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Todokede - Class I (Notification)",
+     "local": "Free",
+     "usd_str": "Free",
+     "usd_num": 0.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Ninsho - Class II (Certification)",
+     "local": "\u00a5500,000",
+     "usd_str": "$3,089",
+     "usd_num": 3089.0,
+     "notes": "Per product \u00b7 Third-party certification",
+     "upfront": true
+    },
+    {
+     "item": "Shonin - Class II/III (Follow-on)",
+     "local": "\u00a51,879,900",
+     "usd_str": "$11,612",
+     "usd_num": 11612.0,
+     "notes": "Per approval",
+     "upfront": true
+    },
+    {
+     "item": "Shonin - Class IV (Follow-on)",
+     "local": "\u00a53,080,600",
+     "usd_str": "$19,029",
+     "usd_num": 19029.0,
+     "notes": "Per approval",
+     "upfront": true
+    },
+    {
+     "item": "Shonin - Class II/III (New, no clinical)",
+     "local": "\u00a511,816,400",
+     "usd_str": "$72,990",
+     "usd_num": 72990.0,
+     "notes": "Per approval",
+     "upfront": true
+    },
+    {
+     "item": "Shonin - Class IV (New, no clinical)",
+     "local": "\u00a516,520,700",
+     "usd_str": "$102,049",
+     "usd_num": 102049.0,
+     "notes": "Per approval",
+     "upfront": true
+    },
+    {
+     "item": "Shonin - Class II/III (New, clinical)",
+     "local": "\u00a513,016,900",
+     "usd_str": "$80,406",
+     "usd_num": 80406.0,
+     "notes": "Per approval",
+     "upfront": true
+    },
+    {
+     "item": "Shonin - Class IV (New, clinical)",
+     "local": "\u00a517,721,200",
+     "usd_str": "$109,464",
+     "usd_num": 109464.0,
+     "notes": "Per approval",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Notification (Todokede))",
+    "display": "1 month",
+    "low_m": 1.0,
+    "high_m": 1.0
+   },
+   "cheapest": {
+    "item": "Todokede - Class I (Notification)",
+    "usd_num": 0.0,
+    "usd_str": "Free",
+    "local": "Free"
+   }
+  },
+  {
+   "country": "Malaysia",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Registration)",
+     "official": "1-3 months",
+     "realistic": "1-3 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 1.0,
+     "high_m": 3.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "3-6 months",
+     "realistic": "3-6 months",
+     "accelerated": "3-6 months",
+     "prior_approval": "EU CE Mark, MHLW, TGA, Health Canada, FDA, MHRA, HSA, TFDA",
+     "low_m": 3.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class C (Registration)",
+     "official": "3-6 months",
+     "realistic": "3-6 months",
+     "accelerated": "3-6 months",
+     "prior_approval": "EU CE Mark, MHLW, TGA, Health Canada, FDA, MHRA, HSA, TFDA",
+     "low_m": 3.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class D (Full Registration)",
+     "official": "3-6 months",
+     "realistic": "3-6 months",
+     "accelerated": "3-6 months",
+     "prior_approval": "EU CE Mark, MHLW, TGA, Health Canada, FDA, MHRA, HSA, TFDA",
+     "low_m": 3.0,
+     "high_m": 6.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Application Fee - Class A",
+     "local": "MYR 500",
+     "usd_str": "$123",
+     "usd_num": 123.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Application Fee - Class B",
+     "local": "MYR 250",
+     "usd_str": "$61",
+     "usd_num": 61.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Application Fee - Class C",
+     "local": "MYR 500",
+     "usd_str": "$123",
+     "usd_num": 123.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Application Fee - Class D",
+     "local": "MYR 750",
+     "usd_str": "$184",
+     "usd_num": 184.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class A",
+     "local": "MYR 750",
+     "usd_str": "$184",
+     "usd_num": 184.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class B",
+     "local": "MYR 1,000",
+     "usd_str": "$246",
+     "usd_num": 246.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class C",
+     "local": "MYR 2,000",
+     "usd_str": "$491",
+     "usd_num": 491.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Registration Fee - Class D",
+     "local": "MYR 3,000",
+     "usd_str": "$737",
+     "usd_num": 737.0,
+     "notes": "Per product",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Registration)",
+    "display": "1-3 months",
+    "low_m": 1.0,
+    "high_m": 3.0
+   },
+   "cheapest": {
+    "item": "Application Fee - Class B",
+    "usd_num": 61.0,
+    "usd_str": "$61",
+    "local": "MYR 250"
+   }
+  },
+  {
+   "country": "Mexico",
+   "region": "Americas",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Libre de Venta (LR) or Registration)",
+     "official": "0.5-1 months",
+     "realistic": "3 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 3.0,
+     "high_m": 3.0
+    },
+    {
+     "class_pathway": "Class II (Registration or Equivalency)",
+     "official": "1-1.5 months",
+     "realistic": "1.3-2.6 years",
+     "accelerated": "8-16 months",
+     "prior_approval": "FDA 510(k), Health Canada, Japan PMDA, IMDRF Committee Members, MDSAP",
+     "low_m": 15.6,
+     "high_m": 31.2
+    },
+    {
+     "class_pathway": "Class III (Registration or Equivalency)",
+     "official": "1.5-2 months",
+     "realistic": "1.3-2.6 years",
+     "accelerated": "8-16 months",
+     "prior_approval": "FDA 510(k)/PMA, Health Canada, Japan PMDA, IMDRF Committee Members, MDSAP",
+     "low_m": 15.6,
+     "high_m": 31.2
+    }
+   ],
+   "fees": [
+    {
+     "item": "New Registration - Class I & I Low Risk",
+     "local": "MXN 16,499",
+     "usd_str": "$947",
+     "usd_num": 947.0,
+     "notes": "One-time per product",
+     "upfront": true
+    },
+    {
+     "item": "New Registration - Class II",
+     "local": "MXN 24,198",
+     "usd_str": "$1,389",
+     "usd_num": 1389.0,
+     "notes": "One-time per product",
+     "upfront": true
+    },
+    {
+     "item": "New Registration - Class III",
+     "local": "MXN 30,798",
+     "usd_str": "$1,768",
+     "usd_num": 1768.0,
+     "notes": "One-time per product",
+     "upfront": true
+    },
+    {
+     "item": "Renewal - Class I & I Low Risk",
+     "local": "MXN 12,374",
+     "usd_str": "$710",
+     "usd_num": 710.0,
+     "notes": "Every 5 years",
+     "upfront": false
+    },
+    {
+     "item": "Renewal - Class II",
+     "local": "MXN 18,149",
+     "usd_str": "$1,042",
+     "usd_num": 1042.0,
+     "notes": "Every 5 years",
+     "upfront": false
+    },
+    {
+     "item": "Renewal - Class III",
+     "local": "MXN 23,098",
+     "usd_str": "$1,326",
+     "usd_num": 1326.0,
+     "notes": "Every 5 years",
+     "upfront": false
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Libre de Venta (LR) or Registration)",
+    "display": "3 months",
+    "low_m": 3.0,
+    "high_m": 3.0
+   },
+   "cheapest": {
+    "item": "New Registration - Class I & I Low Risk",
+    "usd_num": 947.0,
+    "usd_str": "$947",
+    "local": "MXN 16,499"
+   }
+  },
+  {
+   "country": "Pakistan",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Notification)",
+     "official": "1-3 months",
+     "realistic": "2-4 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 2.0,
+     "high_m": 4.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "3-6 months",
+     "realistic": "4-9 months",
+     "accelerated": "3-5 months",
+     "prior_approval": "FDA, EU CE Mark",
+     "low_m": 4.0,
+     "high_m": 9.0
+    },
+    {
+     "class_pathway": "Class C (Registration)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "FDA, EU CE Mark",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class D (Full Registration)",
+     "official": "6-12 months",
+     "realistic": "9-18 months",
+     "accelerated": "6-10 months",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 9.0,
+     "high_m": 18.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Enlistment - Class A",
+     "local": "PKR 6,300",
+     "usd_str": "$23",
+     "usd_num": 23.0,
+     "notes": "Per enlistment",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class B (Import)",
+     "local": "PKR 32,400",
+     "usd_str": "$117",
+     "usd_num": 117.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class C/D (Import)",
+     "local": "PKR 64,800",
+     "usd_str": "$233",
+     "usd_num": 233.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Renewal - Class B (Import)",
+     "local": "PKR 15,700",
+     "usd_str": "$57",
+     "usd_num": 57.0,
+     "notes": "Per renewal",
+     "upfront": false
+    },
+    {
+     "item": "Renewal - Class C/D (Import)",
+     "local": "PKR 32,400",
+     "usd_str": "$117",
+     "usd_num": 117.0,
+     "notes": "Per renewal",
+     "upfront": false
+    },
+    {
+     "item": "System/Family Registration - Class C/D",
+     "local": "PKR 104,500",
+     "usd_str": "$376",
+     "usd_num": 376.0,
+     "notes": "Per registration \u00b7 For 20+ devices",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Notification)",
+    "display": "2-4 months",
+    "low_m": 2.0,
+    "high_m": 4.0
+   },
+   "cheapest": {
+    "item": "Enlistment - Class A",
+    "usd_num": 23.0,
+    "usd_str": "$23",
+    "local": "PKR 6,300"
+   }
+  },
+  {
+   "country": "Peru",
+   "region": "Americas",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Notification)",
+     "official": "1-2 months",
+     "realistic": "2-4 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 2.0,
+     "high_m": 4.0
+    },
+    {
+     "class_pathway": "Class II (Registration)",
+     "official": "3-6 months",
+     "realistic": "4-8 months",
+     "accelerated": "3-5 months",
+     "prior_approval": "FDA 510(k), EU CE Mark, ANVISA",
+     "low_m": 4.0,
+     "high_m": 8.0
+    },
+    {
+     "class_pathway": "Class III (Registration)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "FDA 510(k)/PMA, EU CE Mark, ANVISA",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class IV (Full Registration)",
+     "official": "6-10 months",
+     "realistic": "8-15 months",
+     "accelerated": "5-8 months",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 8.0,
+     "high_m": 15.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "MD Registration - Class I",
+     "local": "\u20ac400",
+     "usd_str": "$457",
+     "usd_num": 457.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "MD Registration - Class II",
+     "local": "\u20ac460",
+     "usd_str": "$526",
+     "usd_num": 526.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "MD Registration - Class III",
+     "local": "\u20ac510",
+     "usd_str": "$583",
+     "usd_num": 583.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "MD Registration - Class IV",
+     "local": "\u20ac580",
+     "usd_str": "$663",
+     "usd_num": 663.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "IVD Registration",
+     "local": "\u20ac460",
+     "usd_str": "$526",
+     "usd_num": 526.0,
+     "notes": "Per registration \u00b7 Estimate based on Class II",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Notification)",
+    "display": "2-4 months",
+    "low_m": 2.0,
+    "high_m": 4.0
+   },
+   "cheapest": {
+    "item": "MD Registration - Class I",
+    "usd_num": 457.0,
+    "usd_str": "$457",
+    "local": "\u20ac400"
+   }
+  },
+  {
+   "country": "Philippines",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Notification)",
+     "official": "1-2 months",
+     "realistic": "2-4 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 2.0,
+     "high_m": 4.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "3-6 months",
+     "realistic": "4-9 months",
+     "accelerated": "3-5 months",
+     "prior_approval": "FDA, EU CE Mark, ASEAN MRA",
+     "low_m": 4.0,
+     "high_m": 9.0
+    },
+    {
+     "class_pathway": "Class C (Registration)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "FDA, EU CE Mark, ASEAN MRA",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class D (Full Registration)",
+     "official": "6-12 months",
+     "realistic": "9-18 months",
+     "accelerated": "6-10 months",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 9.0,
+     "high_m": 18.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Registration - Class A",
+     "local": "PHP 81,810",
+     "usd_str": "$1,332",
+     "usd_num": 1332.0,
+     "notes": "Per registration \u00b7 6-year validity",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class B",
+     "local": "PHP 109,080",
+     "usd_str": "$1,776",
+     "usd_num": 1776.0,
+     "notes": "Per registration \u00b7 6-year validity",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class C",
+     "local": "PHP 112,110",
+     "usd_str": "$1,825",
+     "usd_num": 1825.0,
+     "notes": "Per registration \u00b7 6-year validity",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class D",
+     "local": "PHP 118,170",
+     "usd_str": "$1,924",
+     "usd_num": 1924.0,
+     "notes": "Per registration \u00b7 6-year validity",
+     "upfront": true
+    },
+    {
+     "item": "Annual Registration",
+     "local": "PHP 15,453",
+     "usd_str": "$252",
+     "usd_num": 252.0,
+     "notes": "Annual \u00b7 All classes",
+     "upfront": false
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Notification)",
+    "display": "2-4 months",
+    "low_m": 2.0,
+    "high_m": 4.0
+   },
+   "cheapest": {
+    "item": "Registration - Class A",
+    "usd_num": 1332.0,
+    "usd_str": "$1,332",
+    "local": "PHP 81,810"
+   }
+  },
+  {
+   "country": "Saudi Arabia",
+   "region": "Middle East & Africa",
+   "timelines": [
+    {
+     "class_pathway": "Class A (MDNR Listing)",
+     "official": "1 week",
+     "realistic": "1-2 weeks",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 0.23,
+     "high_m": 0.46
+    },
+    {
+     "class_pathway": "Class B (MDMA Registration)",
+     "official": "1-2 months",
+     "realistic": "1.5-3 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 1.5,
+     "high_m": 3.0
+    },
+    {
+     "class_pathway": "Class C (MDMA Registration)",
+     "official": "2-4 months",
+     "realistic": "3-5 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 3.0,
+     "high_m": 5.0
+    },
+    {
+     "class_pathway": "Class D (MDMA Registration)",
+     "official": "3-5 months",
+     "realistic": "4-6 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 4.0,
+     "high_m": 6.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Application Assessment - Class A",
+     "local": "SAR 15,000",
+     "usd_str": "$4,050",
+     "usd_num": 4050.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "Application Assessment - Class B",
+     "local": "SAR 19,000",
+     "usd_str": "$5,130",
+     "usd_num": 5130.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "Application Assessment - Class C",
+     "local": "SAR 21,000",
+     "usd_str": "$5,670",
+     "usd_num": 5670.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "Application Assessment - Class D",
+     "local": "SAR 23,000",
+     "usd_str": "$6,210",
+     "usd_num": 6210.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "UDI Code Fee (<150 codes)",
+     "local": "$15",
+     "usd_str": "$15",
+     "usd_num": 15.0,
+     "notes": "Per batch",
+     "upfront": true
+    },
+    {
+     "item": "UDI Code Fee (<500 codes)",
+     "local": "$18",
+     "usd_str": "$18",
+     "usd_num": 18.0,
+     "notes": "Per batch",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (MDNR Listing)",
+    "display": "1-2 weeks",
+    "low_m": 0.23,
+    "high_m": 0.46
+   },
+   "cheapest": {
+    "item": "UDI Code Fee (<150 codes)",
+    "usd_num": 15.0,
+    "usd_str": "$15",
+    "local": "$15"
+   }
+  },
+  {
+   "country": "Singapore",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Notification)",
+     "official": "Immediate",
+     "realistic": "Immediate",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": null,
+     "high_m": null
+    },
+    {
+     "class_pathway": "Class B (IBR/Expedited/Full Route)",
+     "official": "5-8 months",
+     "realistic": "3-9 months",
+     "accelerated": "Immediate",
+     "prior_approval": "TGA, Health Canada, MHLW, FDA, EU NB",
+     "low_m": 3.0,
+     "high_m": 9.0
+    },
+    {
+     "class_pathway": "Class C (IBR/Expedited/Full Route)",
+     "official": "6-10.5 months",
+     "realistic": "6-12 months",
+     "accelerated": "Immediate",
+     "prior_approval": "TGA, Health Canada, MHLW, FDA, EU NB",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class D (IBR/Expedited/Full Route)",
+     "official": "8-15 months",
+     "realistic": "9-18 months",
+     "accelerated": "6-12 months",
+     "prior_approval": "TGA, Health Canada, MHLW, FDA, EU NB",
+     "low_m": 9.0,
+     "high_m": 18.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Application Fee - All Classes",
+     "local": "SGD 560",
+     "usd_str": "$434",
+     "usd_num": 434.0,
+     "notes": "Per product \u00b7 Base fee for Class B/C/D",
+     "upfront": true
+    },
+    {
+     "item": "Evaluation - Abridged (Class B)",
+     "local": "SGD 2,010",
+     "usd_str": "$1,557",
+     "usd_num": 1557.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Evaluation - Abridged (Class C)",
+     "local": "SGD 3,900",
+     "usd_str": "$3,020",
+     "usd_num": 3020.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Evaluation - Full (Class D)",
+     "local": "SGD 6,250",
+     "usd_str": "$4,840",
+     "usd_num": 4840.0,
+     "notes": "Per product",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class B (IBR/Expedited/Full Route)",
+    "display": "3-9 months",
+    "low_m": 3.0,
+    "high_m": 9.0
+   },
+   "cheapest": {
+    "item": "Application Fee - All Classes",
+    "usd_num": 434.0,
+    "usd_str": "$434",
+    "local": "SGD 560"
+   }
+  },
+  {
+   "country": "South Korea",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Self-declaration)",
+     "official": "1-2 weeks",
+     "realistic": "1-2 weeks",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 0.23,
+     "high_m": 0.46
+    },
+    {
+     "class_pathway": "Class II (MFDS Review)",
+     "official": "2-4 months",
+     "realistic": "3-6 months",
+     "accelerated": "2-4 months",
+     "prior_approval": "MDSAP for KGMP",
+     "low_m": 3.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class III (MFDS Review with clinical data)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "Class IV (MFDS Review with extensive clinical)",
+     "official": "8-12 months",
+     "realistic": "10-15 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 10.0,
+     "high_m": 15.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Approval - Class 1",
+     "local": "KRW 85,000",
+     "usd_str": "$56",
+     "usd_num": 56.0,
+     "notes": "Per approval \u00b7 Pre-market notification",
+     "upfront": true
+    },
+    {
+     "item": "Approval - Class 2 (with S.E.)",
+     "local": "KRW 130,000",
+     "usd_str": "$86",
+     "usd_num": 86.0,
+     "notes": "Per approval \u00b7 35 days \u00b7 Substantial equivalent",
+     "upfront": true
+    },
+    {
+     "item": "Approval - Class 2 (without S.E.)",
+     "local": "KRW 1,495,000",
+     "usd_str": "$987",
+     "usd_num": 987.0,
+     "notes": "Per approval \u00b7 80 days \u00b7 Requires clinical data",
+     "upfront": true
+    },
+    {
+     "item": "Approval - Class 3/4 (with S.E.)",
+     "local": "KRW 719,000",
+     "usd_str": "$475",
+     "usd_num": 475.0,
+     "notes": "Per approval \u00b7 65 days \u00b7 Substantial equivalent",
+     "upfront": true
+    },
+    {
+     "item": "Approval - Class 3/4 (without S.E.)",
+     "local": "KRW 1,495,000",
+     "usd_str": "$987",
+     "usd_num": 987.0,
+     "notes": "Per approval \u00b7 80 days \u00b7 Requires clinical data",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Self-declaration)",
+    "display": "1-2 weeks",
+    "low_m": 0.23,
+    "high_m": 0.46
+   },
+   "cheapest": {
+    "item": "Approval - Class 1",
+    "usd_num": 56.0,
+    "usd_str": "$56",
+    "local": "KRW 85,000"
+   }
+  },
+  {
+   "country": "Switzerland",
+   "region": "Europe",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Self-certification)",
+     "official": "2-4 months",
+     "realistic": "3-5 months",
+     "accelerated": "1-2 months",
+     "prior_approval": "EU CE Mark (full recognition until 2028)",
+     "low_m": 3.0,
+     "high_m": 5.0
+    },
+    {
+     "class_pathway": "Class IIa (Conformity Assessment)",
+     "official": "4-8 months",
+     "realistic": "6-10 months",
+     "accelerated": "0.5-2 months",
+     "prior_approval": "EU CE Mark (immediate access)",
+     "low_m": 6.0,
+     "high_m": 10.0
+    },
+    {
+     "class_pathway": "Class IIb (Enhanced Conformity Assessment)",
+     "official": "6-12 months",
+     "realistic": "8-14 months",
+     "accelerated": "0.5-2 months",
+     "prior_approval": "EU CE Mark (immediate access)",
+     "low_m": 8.0,
+     "high_m": 14.0
+    },
+    {
+     "class_pathway": "Class III (Full Assessment)",
+     "official": "10-18 months",
+     "realistic": "1-2 years",
+     "accelerated": "0.5-2 months",
+     "prior_approval": "EU CE Mark (immediate access)",
+     "low_m": 12.0,
+     "high_m": 24.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "MD/IVD Registration Fee",
+     "local": "TBD",
+     "usd_str": "TBD",
+     "usd_num": null,
+     "notes": "Per registration \u00b7 Fee amount not yet confirmed by Swissmedic",
+     "upfront": true
+    },
+    {
+     "item": "Custom-made Device Notification",
+     "local": "CHF 300",
+     "usd_str": "$372",
+     "usd_num": 372.0,
+     "notes": "Per device \u00b7 Different registration route for custom-made devices",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Self-certification)",
+    "display": "3-5 months",
+    "low_m": 3.0,
+    "high_m": 5.0
+   },
+   "cheapest": {
+    "item": "Custom-made Device Notification",
+    "usd_num": 372.0,
+    "usd_str": "$372",
+    "local": "CHF 300"
+   }
+  },
+  {
+   "country": "Taiwan",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Registration)",
+     "official": "1-3 months",
+     "realistic": "3-7 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 3.0,
+     "high_m": 7.0
+    },
+    {
+     "class_pathway": "Class II (Registration)",
+     "official": "6-10 months",
+     "realistic": "9-14 months",
+     "accelerated": "6-9 months",
+     "prior_approval": "FDA 510(k), EU CE Mark, Japan PMDA",
+     "low_m": 9.0,
+     "high_m": 14.0
+    },
+    {
+     "class_pathway": "Class III (Registration with clinical data)",
+     "official": "8-12 months",
+     "realistic": "1-1.5 years",
+     "accelerated": "8-11 months",
+     "prior_approval": "FDA 510(k)/PMA, EU CE Mark, Japan PMDA",
+     "low_m": 12.0,
+     "high_m": 18.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Registration - Class I",
+     "local": "TWD 15,000",
+     "usd_str": "$465",
+     "usd_num": 465.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class II",
+     "local": "TWD 58,000",
+     "usd_str": "$1,798",
+     "usd_num": 1798.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Registration - Class III",
+     "local": "TWD 100,000",
+     "usd_str": "$3,100",
+     "usd_num": 3100.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Export Only",
+     "local": "TWD 15,000",
+     "usd_str": "$465",
+     "usd_num": 465.0,
+     "notes": "Per product \u00b7 All classes",
+     "upfront": true
+    },
+    {
+     "item": "Breakthrough Product",
+     "local": "TWD 250,000",
+     "usd_str": "$7,750",
+     "usd_num": 7750.0,
+     "notes": "Per product \u00b7 First-in-world products",
+     "upfront": true
+    },
+    {
+     "item": "Priority Review (Expedited)",
+     "local": "TWD 180,000",
+     "usd_str": "$5,580",
+     "usd_num": 5580.0,
+     "notes": "Per registration",
+     "upfront": true
+    },
+    {
+     "item": "Novel Product",
+     "local": "TWD 130,000",
+     "usd_str": "$4,030",
+     "usd_num": 4030.0,
+     "notes": "Per registration \u00b7 New mechanism/structure/material",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Registration)",
+    "display": "3-7 months",
+    "low_m": 3.0,
+    "high_m": 7.0
+   },
+   "cheapest": {
+    "item": "Registration - Class I",
+    "usd_num": 465.0,
+    "usd_str": "$465",
+    "local": "TWD 15,000"
+   }
+  },
+  {
+   "country": "Thailand",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class 1 (Notification)",
+     "official": "0-1 months",
+     "realistic": "0-2 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 0.0,
+     "high_m": 2.0
+    },
+    {
+     "class_pathway": "Class 2 (Registration)",
+     "official": "9-9.5 months",
+     "realistic": "4-5 months",
+     "accelerated": "-",
+     "prior_approval": "FDA, EU CE Mark, Japan, TGA, Health Canada, WHO (for IVD)",
+     "low_m": 4.0,
+     "high_m": 5.0
+    },
+    {
+     "class_pathway": "Class 3 (Registration)",
+     "official": "9-9.5 months",
+     "realistic": "4-5 months",
+     "accelerated": "-",
+     "prior_approval": "FDA, EU CE Mark, Japan, TGA, Health Canada, WHO (for IVD)",
+     "low_m": 4.0,
+     "high_m": 5.0
+    },
+    {
+     "class_pathway": "Class 4 (Full Registration)",
+     "official": "11-12.5 months",
+     "realistic": "4-5 months",
+     "accelerated": "-",
+     "prior_approval": "FDA, EU CE Mark, Japan, TGA, Health Canada, WHO (for IVD)",
+     "low_m": 4.0,
+     "high_m": 5.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Application Fee - Class 1",
+     "local": "THB 500",
+     "usd_str": "$15",
+     "usd_num": 15.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Approval Fee - Class 1",
+     "local": "THB 2,600",
+     "usd_str": "$78",
+     "usd_num": 78.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Application Fee - Class 2/3",
+     "local": "THB 1,000",
+     "usd_str": "$30",
+     "usd_num": 30.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Approval Fee - Class 2/3",
+     "local": "THB 10,000",
+     "usd_str": "$301",
+     "usd_num": 301.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Application Fee - Class 4",
+     "local": "THB 1,000",
+     "usd_str": "$30",
+     "usd_num": 30.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Approval Fee - Class 4",
+     "local": "THB 20,000",
+     "usd_str": "$601",
+     "usd_num": 601.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Expert Review - Class 2/3",
+     "local": "THB 38,000",
+     "usd_str": "$1,143",
+     "usd_num": 1143.0,
+     "notes": "If required \u00b7 Novel devices",
+     "upfront": true
+    },
+    {
+     "item": "Expert Review - Class 4",
+     "local": "THB 53,000",
+     "usd_str": "$1,594",
+     "usd_num": 1594.0,
+     "notes": "If required \u00b7 Novel devices",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class 1 (Notification)",
+    "display": "0-2 months",
+    "low_m": 0.0,
+    "high_m": 2.0
+   },
+   "cheapest": {
+    "item": "Application Fee - Class 1",
+    "usd_num": 15.0,
+    "usd_str": "$15",
+    "local": "THB 500"
+   }
+  },
+  {
+   "country": "United Arab Emirates",
+   "region": "Middle East & Africa",
+   "timelines": [
+    {
+     "class_pathway": "Class A (Registration)",
+     "official": "1-2 months",
+     "realistic": "2-3 months",
+     "accelerated": "1-2 months",
+     "prior_approval": "FDA, EU CE Mark, Health Canada, Australia TGA",
+     "low_m": 2.0,
+     "high_m": 3.0
+    },
+    {
+     "class_pathway": "Class B (Registration)",
+     "official": "2-4 months",
+     "realistic": "3-6 months",
+     "accelerated": "2-3 months",
+     "prior_approval": "FDA 510(k), EU CE Mark, Health Canada",
+     "low_m": 3.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class C (Registration)",
+     "official": "3-6 months",
+     "realistic": "4-8 months",
+     "accelerated": "3-5 months",
+     "prior_approval": "FDA 510(k), EU CE Mark, Health Canada, Australia TGA",
+     "low_m": 4.0,
+     "high_m": 8.0
+    },
+    {
+     "class_pathway": "Class D (Full Registration)",
+     "official": "4-8 months",
+     "realistic": "6-12 months",
+     "accelerated": "4-7 months",
+     "prior_approval": "FDA PMA, EU CE Mark Class III",
+     "low_m": 6.0,
+     "high_m": 12.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Application Fee",
+     "local": "AED 100",
+     "usd_str": "$27",
+     "usd_num": 27.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "Device Registration",
+     "local": "AED 5,000",
+     "usd_str": "$1,350",
+     "usd_num": 1350.0,
+     "notes": "Per device",
+     "upfront": true
+    },
+    {
+     "item": "Manufacturer Registration License",
+     "local": "AED 10,000",
+     "usd_str": "$2,700",
+     "usd_num": 2700.0,
+     "notes": "Per manufacturer",
+     "upfront": true
+    },
+    {
+     "item": "Classification Service",
+     "local": "AED 500",
+     "usd_str": "$135",
+     "usd_num": 135.0,
+     "notes": "Per request",
+     "upfront": false
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class A (Registration)",
+    "display": "2-3 months",
+    "low_m": 2.0,
+    "high_m": 3.0
+   },
+   "cheapest": {
+    "item": "Application Fee",
+    "usd_num": 27.0,
+    "usd_str": "$27",
+    "local": "AED 100"
+   }
+  },
+  {
+   "country": "United Kingdom",
+   "region": "Europe",
+   "timelines": [
+    {
+     "class_pathway": "Class I (Self-declaration or CE Mark)",
+     "official": "0.5-1 months",
+     "realistic": "0.5-1 months",
+     "accelerated": "2-3 weeks",
+     "prior_approval": "EU CE Mark (accepted until 2028+)",
+     "low_m": 0.5,
+     "high_m": 1.0
+    },
+    {
+     "class_pathway": "Class IIa (UKCA (UK Approved Body) or CE Mark)",
+     "official": "3-6 months",
+     "realistic": "3-6 months",
+     "accelerated": "0.5-1 months",
+     "prior_approval": "EU CE Mark (accepted until Jun 2028)",
+     "low_m": 3.0,
+     "high_m": 6.0
+    },
+    {
+     "class_pathway": "Class IIb (UKCA (UK Approved Body) or CE Mark)",
+     "official": "4-8 months",
+     "realistic": "4-8 months",
+     "accelerated": "0.5-1 months",
+     "prior_approval": "EU CE Mark (accepted until Jun 2028 or Dec 2027 for implantables)",
+     "low_m": 4.0,
+     "high_m": 8.0
+    },
+    {
+     "class_pathway": "Class III (UKCA (UK Approved Body) or CE Mark)",
+     "official": "6-12 months",
+     "realistic": "6-12 months",
+     "accelerated": "0.5-1 months",
+     "prior_approval": "EU CE Mark (accepted until Dec 2027 for Class III)",
+     "low_m": 6.0,
+     "high_m": 12.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Registration Fee (until March 2026)",
+     "local": "\u00a3261",
+     "usd_str": "$349",
+     "usd_num": 349.0,
+     "notes": "Per application",
+     "upfront": true
+    },
+    {
+     "item": "New Estimated Fees Starting April 2026",
+     "local": "\u00a3300",
+     "usd_str": "$402",
+     "usd_num": 402.0,
+     "notes": "Annual per level 2 GMDN \u00b7 Estimated fee - subject to confirmation",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class I (Self-declaration or CE Mark)",
+    "display": "0.5-1 months",
+    "low_m": 0.5,
+    "high_m": 1.0
+   },
+   "cheapest": {
+    "item": "Registration Fee (until March 2026)",
+    "usd_num": 349.0,
+    "usd_str": "$349",
+    "local": "\u00a3261"
+   }
+  },
+  {
+   "country": "United States",
+   "region": "Americas",
+   "timelines": [
+    {
+     "class_pathway": "510(k) (Premarket Notification)",
+     "official": "3 months",
+     "realistic": "6-12 months",
+     "accelerated": "6-8 months",
+     "prior_approval": "Prior 510(k) as predicate, PreSub meeting",
+     "low_m": 6.0,
+     "high_m": 12.0
+    },
+    {
+     "class_pathway": "De Novo (De Novo Classification)",
+     "official": "5 months",
+     "realistic": "8-15 months",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 8.0,
+     "high_m": 15.0
+    },
+    {
+     "class_pathway": "PMA (Premarket Approval)",
+     "official": "6 months",
+     "realistic": "4-8 years",
+     "accelerated": "4-6 years",
+     "prior_approval": "Breakthrough Device Designation",
+     "low_m": 48.0,
+     "high_m": 96.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Annual Establishment Registration",
+     "local": "$11,423",
+     "usd_str": "$11,423",
+     "usd_num": 11423.0,
+     "notes": "Annual per facility",
+     "upfront": false
+    },
+    {
+     "item": "510(k) Review - Standard",
+     "local": "$26,067",
+     "usd_str": "$26,067",
+     "usd_num": 26067.0,
+     "notes": "Per submission \u00b7 Class II typically",
+     "upfront": true
+    },
+    {
+     "item": "510(k) Review - Small Business",
+     "local": "$6,517",
+     "usd_str": "$6,517",
+     "usd_num": 6517.0,
+     "notes": "Per submission \u00b7 FDA-qualified small businesses",
+     "upfront": true
+    },
+    {
+     "item": "De Novo Review - Standard",
+     "local": "$173,782",
+     "usd_str": "$173,782",
+     "usd_num": 173782.0,
+     "notes": "Per submission",
+     "upfront": true
+    },
+    {
+     "item": "De Novo Review - Small Business",
+     "local": "$43,446",
+     "usd_str": "$43,446",
+     "usd_num": 43446.0,
+     "notes": "Per submission",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "510(k) (Premarket Notification)",
+    "display": "6-12 months",
+    "low_m": 6.0,
+    "high_m": 12.0
+   },
+   "cheapest": {
+    "item": "510(k) Review - Small Business",
+    "usd_num": 6517.0,
+    "usd_str": "$6,517",
+    "local": "$6,517"
+   }
+  },
+  {
+   "country": "Vietnam",
+   "region": "Asia-Pacific",
+   "timelines": [
+    {
+     "class_pathway": "Class 1 (Notification)",
+     "official": "1-2 weeks",
+     "realistic": "1-2 weeks",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 0.23,
+     "high_m": 0.46
+    },
+    {
+     "class_pathway": "Class 2 (Notification)",
+     "official": "1-2 weeks",
+     "realistic": "1-2 weeks",
+     "accelerated": "-",
+     "prior_approval": null,
+     "low_m": 0.23,
+     "high_m": 0.46
+    },
+    {
+     "class_pathway": "Class 3 (Registration)",
+     "official": "1-1.5 years",
+     "realistic": "4-5 months",
+     "accelerated": "4-5 months",
+     "prior_approval": "FDA, TGA, MHLW, EU, MHRA, Swissmedic, NMPA, MFDS",
+     "low_m": 4.0,
+     "high_m": 5.0
+    },
+    {
+     "class_pathway": "Class 4 (Registration)",
+     "official": "1-1.5 years",
+     "realistic": "4-5 months",
+     "accelerated": "4-5 months",
+     "prior_approval": "FDA, TGA, MHLW, EU, MHRA, Swissmedic, NMPA, MFDS",
+     "low_m": 4.0,
+     "high_m": 5.0
+    }
+   ],
+   "fees": [
+    {
+     "item": "Application - Class A",
+     "local": "VND 500,000",
+     "usd_str": "$20",
+     "usd_num": 20.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Application - Class B",
+     "local": "VND 1,500,000",
+     "usd_str": "$60",
+     "usd_num": 60.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Application - Class C",
+     "local": "VND 3,000,000",
+     "usd_str": "$120",
+     "usd_num": 120.0,
+     "notes": "Per product",
+     "upfront": true
+    },
+    {
+     "item": "Application - Class D",
+     "local": "VND 3,000,000",
+     "usd_str": "$120",
+     "usd_num": 120.0,
+     "notes": "Per product",
+     "upfront": true
+    }
+   ],
+   "fastest": {
+    "class_pathway": "Class 1 (Notification)",
+    "display": "1-2 weeks",
+    "low_m": 0.23,
+    "high_m": 0.46
+   },
+   "cheapest": {
+    "item": "Application - Class A",
+    "usd_num": 20.0,
+    "usd_str": "$20",
+    "local": "VND 500,000"
+   }
+  }
+ ]
+}

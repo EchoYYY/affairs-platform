@@ -197,6 +197,28 @@ export default function Monitoring() {
             </div>
           ))}
           </div>
+
+          {result.other && result.other.count > 0 && (
+            <>
+              <div className="section-title">Other — third-party regulatory intelligence</div>
+              <div className="card">
+                <div className="muted" style={{ fontSize: 12.5, marginBottom: 10 }}>
+                  {result.other.count} update{result.other.count !== 1 ? "s" : ""} in the last{" "}
+                  <strong style={{ color: "var(--ink-2)" }}>{result.timeframe_days} days</strong>, consolidated from{" "}
+                  {result.other.sources.join(" · ")} (checked on every scan).
+                </div>
+                {result.other.updates.map((u, i) => (
+                  <div key={i} style={{ fontSize: 13, marginBottom: 5, display: "flex", gap: 8 }}>
+                    <span className="tag" style={{ margin: 0, flexShrink: 0 }}>{u.source.split(" — ")[0]}</span>
+                    <span>
+                      <a href={u.url} target="_blank" rel="noreferrer" style={{ color: "var(--brand)" }}>{u.title}</a>
+                      {u.date && <span className="muted"> — {u.date}</span>}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       )}
     </>

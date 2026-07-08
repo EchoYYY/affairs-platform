@@ -23,6 +23,7 @@
   --high: #ff9a3d;
   --medium: #ffce4d;
   --low: #3ddc97;
+  --ok: #3ddc97;
 
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
   --radius: 14px;
@@ -159,6 +160,26 @@ a { color: inherit; text-decoration: none; }
 .pillar p { margin: 0; color: var(--ink-2); font-size: 12.5px; line-height: 1.5; }
 .pillar .go { margin-top: 12px; color: var(--brand); font-size: 12.5px; font-weight: 600; }
 .pillar.soon { opacity: .85; }
+
+/* halo on modules we've built out */
+.pillar.built { border-color: rgba(242,120,60,.42); }
+.pillar.built:hover { border-color: rgba(242,120,60,.7); }
+.pillar.built .picon {
+  position: relative; background: var(--brand-soft);
+  border-color: rgba(242,120,60,.55);
+  box-shadow: 0 0 16px 1px rgba(242,120,60,.35);
+}
+.pillar.built .picon::after {
+  content: ""; position: absolute; inset: -7px; border-radius: 50%;
+  border: 1.5px solid rgba(242,120,60,.6);
+  animation: haloPulse 2.6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes haloPulse {
+  0%, 100% { transform: scale(1); opacity: .6; }
+  50% { transform: scale(1.18); opacity: .12; }
+}
+@media (prefers-reduced-motion: reduce) { .pillar.built .picon::after { animation: none; } }
 .pillar .tagchip { position: absolute; top: 16px; right: 16px; font-size: 10px;
   padding: 2px 8px; border-radius: 999px; background: var(--surface-3); color: var(--ink-3); }
 
@@ -197,7 +218,9 @@ a { color: inherit; text-decoration: none; }
 .doc-row .summary { color: var(--ink-2); font-size: 13px; margin-top: 8px; }
 
 /* ---------- Filters / inputs ---------- */
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; align-items: center; }
+.filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; align-items: center; }
+.fld { display: flex; flex-direction: column; gap: 4px; }
+.fld-lbl { font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-2); font-weight: 600; }
 select, input[type="text"], input[type="search"], input[type="date"], textarea {
   padding: 8px 11px; border: 1px solid var(--border); border-radius: 8px;
   background: var(--surface-2); color: var(--ink); font-size: 13px; font-family: inherit;
@@ -222,6 +245,24 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--brand-soft)
 .detail-head h2 { margin: 6px 0; font-size: 22px; color: #fff; }
 .kv { display: flex; gap: 26px; flex-wrap: wrap; color: var(--ink-2); font-size: 13px; }
 .section-title { font-size: 15px; font-weight: 700; margin: 24px 0 12px; color: #fff; }
+
+/* market-profile key numbers */
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+.stat-card {
+  background: var(--surface-2); border: 1px solid var(--border-soft); border-radius: 10px;
+  padding: 14px 16px; border-top: 2px solid var(--brand);
+}
+.stat-val { font-size: 22px; font-weight: 750; color: #fff; letter-spacing: -.01em; }
+.stat-lbl { font-size: 12px; color: var(--ink-2); margin-top: 3px; }
+
+/* how-to-register long-form */
+.howto { max-width: 900px; }
+.howto-h { font-size: 14.5px; font-weight: 700; color: #fff; margin: 20px 0 6px; }
+.howto-q { font-size: 13.5px; font-weight: 650; color: var(--brand); margin: 18px 0 5px; }
+.howto-p { font-size: 13.5px; line-height: 1.62; color: var(--ink-2); margin: 0 0 10px; }
+.howto-ul { margin: 4px 0 12px; padding-left: 4px; list-style: none; }
+.howto-ul li { position: relative; padding-left: 18px; margin-bottom: 6px; font-size: 13.5px; line-height: 1.55; color: var(--ink-2); }
+.howto-ul li::before { content: "▹"; position: absolute; left: 2px; color: var(--brand); }
 .req-item, .obl-item {
   padding: 12px 14px; border: 1px solid var(--border); border-left: 3px solid var(--brand);
   border-radius: 8px; margin-bottom: 8px; background: var(--surface);

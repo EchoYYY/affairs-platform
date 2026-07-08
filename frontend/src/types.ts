@@ -136,6 +136,53 @@ export interface Health {
   model: string;
 }
 
+export interface RegTimeline {
+  class_pathway: string;
+  official: string;
+  realistic: string;
+  accelerated: string;
+  prior_approval: string | null;
+  low_m: number | null;
+  high_m: number | null;
+}
+export interface RegFee {
+  item: string;
+  local: string;
+  usd_str: string;
+  usd_num: number | null;
+  notes: string;
+  upfront: boolean;
+}
+export interface HowToBlock { k: "h" | "p" | "li" | "q"; t: string }
+export interface MarketProfile {
+  country: string;
+  title: string;
+  description: string[];
+  key_numbers: { value: string; metric: string }[];
+  how_to_title: string;
+  how_to: HowToBlock[];
+  source: string | null;
+  captured: string | null;
+}
+export interface Market {
+  country: string;
+  region: string;
+  timelines: RegTimeline[];
+  fees: RegFee[];
+  fastest: { class_pathway: string; display: string; low_m: number; high_m: number } | null;
+  cheapest: { item: string; usd_num: number; usd_str: string; local: string } | null;
+  profile: MarketProfile | null;
+}
+export interface RegBucketTime { key: string; label: string; max_months: number }
+export interface RegBucketCost { key: string; label: string; max_usd: number }
+export interface RegFacets {
+  countries: string[];
+  regions: string[];
+  time_buckets: RegBucketTime[];
+  cost_buckets: RegBucketCost[];
+}
+export interface RegistrationData { markets: Market[]; facets: RegFacets }
+
 /* ---------- Phase 2 ---------- */
 export interface Profile {
   org_name: string;
@@ -302,6 +349,12 @@ export interface CountryCard {
   updates: { title: string; url: string; published: string; authority: string }[];
   documents: { id: number; title: string; authority: string; rel_path: string }[];
 }
+export interface OtherUpdate {
+  title: string;
+  url: string;
+  date: string;
+  source: string;
+}
 export interface CountryScan {
   scanned_at: string;
   timeframe_days: number;
@@ -309,6 +362,7 @@ export interface CountryScan {
   jurisdictions: string[];
   ai_enabled: boolean;
   countries: CountryCard[];
+  other: { sources: string[]; count: number; updates: OtherUpdate[] };
 }
 
 export interface HorizonItem {

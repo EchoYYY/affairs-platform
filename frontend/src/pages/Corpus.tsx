@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { api } from "../api";
 import type { DocList, Facets } from "../types";
 import { RiskBadge, Spinner, Tags } from "../components";
+import { RegChat } from "../RegChat";
 
 export default function Corpus() {
   const [facets, setFacets] = useState<Facets | null>(null);
@@ -44,12 +45,12 @@ export default function Corpus() {
     <>
       <div className="page-head" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 16 }}>
         <div>
-          <h2>Regulatory Corpus</h2>
-          <p>Centralized access to every ingested regulation, guidance and standard.</p>
+          <h2>Regulatory Library</h2>
+          <p>Medical Device Regulations Database — every regulation, guidance and standard, with AI analysis.</p>
         </div>
         <div style={{ textAlign: "right" }}>
           <button className="btn" onClick={sync} disabled={syncing}>
-            {syncing ? <><span className="spinner" /> Syncing…</> : "⟳ Sync corpus"}
+            {syncing ? <><span className="spinner" /> Syncing…</> : "⟳ Sync library"}
           </button>
           <div className="muted" style={{ fontSize: 11.5, marginTop: 6 }}>
             {autoMin ? `Auto-syncs every ${autoMin} min` : "Auto-sync off"}
@@ -57,6 +58,8 @@ export default function Corpus() {
         </div>
       </div>
       {syncMsg && <div className="banner">{syncMsg}</div>}
+
+      <RegChat />
 
       <div className="filters">
         <input type="search" placeholder="Filter by title…" value={q}
@@ -98,6 +101,11 @@ export default function Corpus() {
               </div>
               <div className="meta">
                 {d.authority} · {d.region} · {d.category} · {d.page_count} pp
+                {!d.is_scanned && (
+                  <> · <a href={`/api/documents/${d.id}/file`} target="_blank" rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()} style={{ color: "var(--brand)", fontWeight: 600 }}>
+                    View regulation ↗</a></>
+                )}
               </div>
               {d.summary && <div className="summary">{d.summary}</div>}
               {d.regulatory_areas.length > 0 && (

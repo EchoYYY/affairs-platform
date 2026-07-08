@@ -1,7 +1,8 @@
 import type {
   Alert, AlertStats, AskResponse, Briefing, CountryScan, Dashboard, DocList, DocumentDetail,
   Facets, Health, HorizonScan, ImpactRow, JurisdictionRegion, MonitorRunResult, Product,
-  Profile, SafetyScan, SearchResult, Source, Stats, Task, TaskBoard, Trends, UpdateRow,
+  Profile, RegistrationData, SafetyScan, SearchResult, Source, Stats, Task, TaskBoard, Trends,
+  UpdateRow,
 } from "./types";
 
 async function get<T>(url: string): Promise<T> {
@@ -79,6 +80,7 @@ export const api = {
   horizonScan: () => post<HorizonScan>("/api/monitor/horizon-scan?poll=true", {}),
   horizonLast: () => get<HorizonScan>("/api/monitor/horizon"),
   jurisdictions: () => get<{ regions: JurisdictionRegion[] }>("/api/jurisdictions"),
+  registration: () => get<RegistrationData>("/api/registration"),
   countryScan: (body: { jurisdictions: string[]; days: number; product_code: string; indication: string }) =>
     post<CountryScan>("/api/monitor/country-scan", body),
 

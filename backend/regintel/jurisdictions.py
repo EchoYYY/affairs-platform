@@ -59,10 +59,12 @@ _J: List[Dict[str, Any]] = [
     ("egypt", "Africa", "Egypt", "Egyptian Drug Authority", "EDA", "https://edaegypt.gov.eg", [], []),
     ("au", "Africa", "African Union", "African Medicines Agency", "AMA", "https://www.ama-africa.org", [], []),
     # International bodies
-    ("imdrf", "International", "International", "International Medical Device Regulators Forum", "IMDRF", "https://www.imdrf.org", ["IMDRF"], ["International"]),
+    ("imdrf", "International", "International", "International Medical Device Regulators Forum", "IMDRF", "https://www.imdrf.org/news-events", ["IMDRF"], []),
+    ("mdcg", "International", "EU / International", "Medical Device Coordination Group", "MDCG", "https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en", ["MDCG"], []),
+    ("teamnb", "International", "EU / International", "Team-NB — European Notified Bodies", "Team-NB", "https://www.team-nb.org/", ["Team-NB"], []),
     ("ghwp", "International", "International", "Global Harmonization Working Party", "GHWP", "https://www.ghwp.org", [], []),
     ("who", "International", "International", "World Health Organization", "WHO", "https://www.who.int", [], []),
-    ("ich", "International", "International", "Int'l Council for Harmonisation", "ICH", "https://www.ich.org", [], ["International"]),
+    ("ich", "International", "International", "Int'l Council for Harmonisation", "ICH", "https://www.ich.org", [], []),
 ]
 
 # approximate lat/lon for the coverage world map
@@ -77,6 +79,7 @@ _COORDS: Dict[str, tuple] = {
     "saudi": (24, 45), "uae": (24, 54), "israel": (31, 35), "turkey": (39, 35),
     "southafrica": (-29, 24), "egypt": (27, 30), "au": (9, 39),
     "imdrf": (46, 6), "ghwp": (48, 8), "who": (46, 6), "ich": (47, 7),
+    "mdcg": (50.8, 4.4), "teamnb": (50.5, 4.5),
 }
 
 # direct safety-information / recalls pages where known (else falls back to url)
@@ -84,7 +87,8 @@ _SAFETY_URL: Dict[str, str] = {
     "us": "https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls-and-early-alerts",
     "uk": "https://www.gov.uk/drug-device-alerts",
     "eu": "https://ec.europa.eu/tools/eudamed",
-    "australia": "https://www.tga.gov.au/safety/recalls",
+    "australia": "https://apps.tga.gov.au/prod/DEVICES/daen-entry.aspx",
+    "japan": "https://www.pmda.go.jp/safety/info-services/medi-navi/0007.html",
     "canada": "https://recalls-rappels.canada.ca/en",
     "imdrf": "https://www.imdrf.org/safety-information",
     "who": "https://www.who.int/teams/regulation-prequalification/incidents-and-SF",

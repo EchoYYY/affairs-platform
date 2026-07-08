@@ -40,6 +40,10 @@ export default function DocumentDetail() {
         <div className="kv">
           <span>{doc.page_count} pages</span>
           <span>{doc.char_count.toLocaleString()} characters</span>
+          {!doc.is_scanned && (
+            <a href={`/api/documents/${doc.id}/file`} target="_blank" rel="noreferrer"
+              style={{ color: "var(--brand)", fontWeight: 600 }}>View original regulation ↗</a>
+          )}
           <span className="muted">{doc.rel_path}</span>
         </div>
       </div>

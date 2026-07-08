@@ -94,6 +94,18 @@ def jurisdictions_list():
     return {"regions": jurisdictions.grouped()}
 
 
+@router.get("/registration/facets")
+def registration_facets():
+    from .. import registration_data
+    return registration_data.facets()
+
+
+@router.get("/registration")
+def registration():
+    from .. import registration_data
+    return registration_data.all_data()
+
+
 class CountryScanReq(BaseModel):
     jurisdictions: List[str]
     days: int = 90

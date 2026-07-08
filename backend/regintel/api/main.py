@@ -116,6 +116,25 @@ def document(doc_id: int):
     return doc
 
 
+@app.get("/api/documents/{doc_id}/file")
+def document_file(doc_id: int):
+    """Open the actual regulation document (the source PDF/DOCX/XLSX)."""
+    import os
+
+    from fastapi.responses import FileResponse
+
+    from ..db import connect
+
+    conn = connect()
+    try:
+        row = conn.execute("SELECT path, filename FROM documents WHERE id = ?", (doc_id,)).fetchone()
+    finally:
+        conn.close()
+    if not row or not row["path"] or not os.path.exists(row["path"]):
+        raise HTTPException(status_code=404, detail="Regulation file not found on disk")
+    return FileResponse(row["path"], filename=row["filename"])
+
+
 @app.post("/api/documents/{doc_id}/interpret")
 def interpret(doc_id: int):
     from ..nlp.interpret import interpret_one

@@ -48,9 +48,15 @@ def _local_data(jur: Dict[str, Any], cutoff: str, product_code: str,
         auths = jur["match_authorities"]
         regions = jur["match_regions"]
         if auths or regions:
-            # monitored updates within the timeframe
-            for u in conn.execute("SELECT * FROM updates ORDER BY id DESC LIMIT 500"):
+            from .monitor.sources import SOURCE_KIND
+            # Global Monitoring shows *regulatory* updates (news/guidance/press),
+            # not safety recalls/alerts (those live in the Alerts safety scan).
+            for u in conn.execute(
+                "SELECT u.*, s.key AS source_key FROM updates u "
+                "LEFT JOIN sources s ON s.id = u.source_id ORDER BY u.id DESC LIMIT 700"):
                 if u["authority"] not in auths and u["region"] not in regions:
+                    continue
+                if SOURCE_KIND.get(u["source_key"], "regulatory") != "regulatory":
                     continue
                 # effective date: the item's own published date, else when we first
                 # captured it — so undated items still respect the timeframe filter.
@@ -174,9 +180,34 @@ def scan(jurisdiction_keys: List[str], days: int = 90,
         "jurisdictions": jurisdiction_keys,
         "ai_enabled": settings.claude_enabled,
         "countries": countries,
+        "other": _other_updates(cutoff, product_code, indication),
     }
     _last = result
     return result
+
+
+def _other_updates(cutoff: str, product_code: str = "", indication: str = "") -> Dict[str, Any]:
+    """Consolidated third-party regulatory-intelligence sources (region 'Other'),
+    checked on every scan regardless of the selected jurisdictions."""
+    conn = connect()
+    try:
+        items: List[Dict[str, Any]] = []
+        srcs = set()
+        for u in conn.execute(
+            "SELECT u.*, s.name AS source_name FROM updates u "
+            "JOIN sources s ON s.id = u.source_id WHERE s.region = 'Other' "
+            "ORDER BY u.id DESC LIMIT 300"):
+            if not _matches_filter(f"{u['title']} {u['summary_raw'] or ''}", product_code, indication):
+                continue
+            eff = (u["published"] or "")[:10] or (u["fetched_at"] or "")[:10]
+            if eff and eff < cutoff:
+                continue
+            items.append({"title": u["title"], "url": u["url"],
+                          "date": (u["published"] or "")[:10], "source": u["source_name"]})
+            srcs.add(u["source_name"])
+        return {"sources": sorted(srcs), "count": len(items), "updates": items[:40]}
+    finally:
+        conn.close()
 
 
 def last() -> Optional[Dict[str, Any]]:

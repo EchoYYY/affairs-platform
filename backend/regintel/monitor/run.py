@@ -31,6 +31,12 @@ def poll_all(score: bool = True, verbose: bool = True) -> Dict[str, int]:
         srcs = conn.execute("SELECT * FROM sources WHERE enabled = 1").fetchall()
         for s in srcs:
             src = dict(s)
+            # enrich with registry-only fields not stored in the DB
+            reg = sources.by_key(src["key"])
+            if reg:
+                for fld in ("content_path", "min_title_len"):
+                    if reg.get(fld) is not None:
+                        src[fld] = reg[fld]
             try:
                 items = fetch.fetch_source(src)
                 sources.mark_checked(conn, src["id"], f"ok ({len(items)} items)")

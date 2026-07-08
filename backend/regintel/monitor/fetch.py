@@ -20,52 +20,73 @@ def fetch_source(source: Dict[str, Any]) -> List[Dict[str, Any]]:
     if stype == "openfda":
         return _fetch_openfda(source["url"])
     if stype == "html":
-        return _fetch_html(source["url"])
+        return _fetch_html(source)
     raise ValueError(f"Unknown source type: {stype}")
 
 
-# nav / breadcrumb link texts to skip when scraping FDA content pages
+# nav / breadcrumb link texts to skip when scraping content pages
 _HTML_NAV = {
     "medical devices news and events", "cdrh new - news and updates",
     "follow us on social media", "home", "medical devices",
+    "read more news", "team-nb documents", "private part", "all news",
+    "obsolete guidance is available here",
 }
 
+
+import re as _re
 
 _MONTHS = {m: i + 1 for i, m in enumerate(
     ["January", "February", "March", "April", "May", "June", "July", "August",
      "September", "October", "November", "December"])}
-# a date inside a heading (e.g. "July 1, 2026</h2>") marks the group that follows
-_DATE_HEADING = (
-    r"(?P<date>(?:January|February|March|April|May|June|July|August|September|"
-    r"October|November|December)\s+\d{1,2},\s+20\d{2})\s*</h[1-6]>")
-_LINK = r'<a\b[^>]*href="(?P<href>/medical-devices/[^"#?]+)"[^>]*>(?P<title>.*?)</a>'
-_TOKEN_RE = None  # compiled lazily
+_MONTH_ALT = "|".join(_MONTHS)
+# a full date inside a heading (e.g. "July 1, 2026</h2>") groups the items after it
+_DATE_HEADING = rf"(?P<date>(?:{_MONTH_ALT})\s+\d{{1,2}},\s+20\d{{2}})\s*</h[1-6]>"
+# a date prefix inside a title (e.g. "July 1, 2026 - FDA Approves ...")
+_INLINE_DATE = _re.compile(rf"^((?:{_MONTH_ALT})\s+\d{{1,2}},\s+20\d{{2}})\s*[-–—:]\s*(.+)$")
 
 
 def _to_iso(datestr: str):
-    import re
-    m = re.match(r"(\w+)\s+(\d{1,2}),\s+(\d{4})", datestr)
-    if not m:
+    m = _re.match(r"(\w+)\s+(\d{1,2}),\s+(\d{4})", datestr or "")
+    if not m or m.group(1) not in _MONTHS:
         return ""
-    mon = _MONTHS.get(m.group(1))
-    if not mon:
-        return ""
-    return f"{m.group(3)}-{mon:02d}-{int(m.group(2)):02d}"
+    return f"{m.group(3)}-{_MONTHS[m.group(1)]:02d}-{int(m.group(2)):02d}"
 
 
-def _fetch_html(url: str) -> List[Dict[str, Any]]:
+def _nearby_date(html: str, start: int, end: int) -> str:
+    """Find a publication date near a content link (listing pages put the date in
+    a sibling element just before/after the link — e.g. <time datetime=...> or a
+    'July 7, 2026' div). Returns ISO yyyy-mm-dd or ''."""
+    window = html[max(0, start - 320): end + 360]
+    m = _re.search(r'datetime="(\d{4}-\d{2}-\d{2})', window)
+    if m:
+        return m.group(1)
+    m = _re.search(rf"(?:{_MONTH_ALT})\s+\d{{1,2}},\s+20\d{{2}}", window)
+    if m:
+        return _to_iso(m.group(0))
+    m = _re.search(rf"(\d{{1,2}})\s+({_MONTH_ALT})\s+(20\d{{2}})", window)
+    if m:
+        return f"{m.group(3)}-{_MONTHS[m.group(2)]:02d}-{int(m.group(1)):02d}"
+    return ""
+
+
+def _fetch_html(source: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Scrape dated content items from an FDA (or similar) news page.
 
-    The CDRH 'News and Updates' page has no RSS but groups items under dated
-    headings, so we walk the page in order and stamp each item with the most
-    recent heading date — giving accurate timeframe filtering downstream.
+    Handles both layouts: items grouped under dated headings (CDRH News), and
+    items whose title is prefixed with a date (Press Announcements). `content_path`
+    restricts which links count as content (e.g. '/news-events/press-announcements/').
     """
-    import re
     from urllib.parse import urljoin
 
-    global _TOKEN_RE
-    if _TOKEN_RE is None:
-        _TOKEN_RE = re.compile(f"{_DATE_HEADING}|{_LINK}", re.S | re.I)
+    import html as _html
+
+    url = source["url"]
+    path = source.get("content_path", "/medical-devices/")
+    min_len = int(source.get("min_title_len", 15))
+    # match any anchor, then keep those whose href contains content_path — handles
+    # both relative (/news/…) and absolute (https://site/news-brief/…) links.
+    link_pat = r'<a\b[^>]*href="(?P<href>[^"#]+)"[^>]*>(?P<title>.*?)</a>'
+    token = _re.compile(f"{_DATE_HEADING}|{link_pat}", _re.S | _re.I)
 
     resp = httpx.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT,
                      follow_redirects=True)
@@ -75,14 +96,24 @@ def _fetch_html(url: str) -> List[Dict[str, Any]]:
     items: List[Dict[str, Any]] = []
     seen = set()
     current_date = ""
-    for m in _TOKEN_RE.finditer(html):
+    for m in token.finditer(html):
         if m.group("date"):
             current_date = _to_iso(m.group("date"))
             continue
         href = m.group("href")
-        title = re.sub(r"<[^>]+>", "", m.group("title") or "")
-        title = re.sub(r"\s+", " ", title).strip()
-        if len(title) < 20 or title.lower() in _HTML_NAV or href.count("/") < 3:
+        if path not in href:
+            continue
+        if "/author/" in href or "/tag/" in href or "/category/" in href:
+            continue
+        title = _html.unescape(_re.sub(r"<[^>]+>", "", m.group("title") or ""))
+        title = _re.sub(r"\s+", " ", title).strip()
+        # date priority: grouped heading > date near the link > none
+        published = current_date or _nearby_date(html, m.start(), m.end())
+        inline = _INLINE_DATE.match(title)
+        if inline:  # date embedded in the title (e.g. press announcements)
+            published = _to_iso(inline.group(1))
+            title = inline.group(2).strip()
+        if len(title) < min_len or title.lower() in _HTML_NAV:
             continue
         absu = urljoin(url, href)
         if absu in seen:
@@ -90,7 +121,7 @@ def _fetch_html(url: str) -> List[Dict[str, Any]]:
         seen.add(absu)
         items.append({
             "external_id": href, "title": title[:300], "url": absu,
-            "published": current_date, "summary_raw": "",
+            "published": published, "summary_raw": "",
         })
         if len(items) >= 60:
             break

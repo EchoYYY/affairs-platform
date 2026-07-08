@@ -1,0 +1,511 @@
+{
+ "Argentina": {
+  "country": "Argentina",
+  "title": "ANMAT Argentina Medical Device Registration",
+  "description": [
+   "Argentina medical device registration is mandatory for all devices sold in the country. Devices must obtain authorization from ANMAT, Argentina's device regulator. Foreign manufacturers must also appoint a local authorized representative, submit registration documentation according to their device risk class, and comply with local quality system requirements and post-market obligations."
+  ],
+  "key_numbers": [
+   {
+    "value": "$0.9bn",
+    "metric": "MD Market size"
+   },
+   {
+    "value": "28.1%",
+    "metric": "MD Market CAGR"
+   },
+   {
+    "value": "$0.35b",
+    "metric": "IVD Market size"
+   },
+   {
+    "value": "4.5%",
+    "metric": "IVD Market CAGR"
+   },
+   {
+    "value": "$2.44b",
+    "metric": "Health Budget"
+   },
+   {
+    "value": "10.37%",
+    "metric": "Aging Population"
+   }
+  ],
+  "how_to_title": "How to Register a Medical Device in Argentina",
+  "how_to": [
+   {
+    "k": "h",
+    "t": "Overview"
+   },
+   {
+    "k": "p",
+    "t": "Medical device and IVD registration in Argentina is overseen by the National Administration of Drugs, Food and Medical Devices (ANMAT) and recorded in the RPPMT (Registry of Producers and Products of Medical Technology). Devices are classified by risk into Class I, II, III, and IV, with documentation requirements increasing by class. ANMAT registration requirements are outlined in Disposición 64/2025 covering medical devices and Disposición ANMAT 727/2013 (and subsequent rules)."
+   },
+   {
+    "k": "p",
+    "t": "Class I and II devices are subject to less technical scrutiny, but the legal representative must have the full dossier compiled for audits or ANMAT request. Class III and IV devices undergo a full technical review. All documentation must comply with ANMAT regulatory provisions, including labeling, IFU requirements, GMP evidence, and risk management reports."
+   },
+   {
+    "k": "h",
+    "t": "Classification and registration pathways"
+   },
+   {
+    "k": "p",
+    "t": "Devices follow a four-tier risk classification (Class I–IV). Registration requirements depend on class and device characteristics. IVDs also follow a four-tier risk classification scheme (Class A–D)."
+   },
+   {
+    "k": "h",
+    "t": "Declaration of Conformity pathway (Class I and II devices)"
+   },
+   {
+    "k": "p",
+    "t": "Manufacturers must file a Declaration of Conformity (DoC) with supporting documentation. All registration documentation is submitted to ANMAT via the HELENA system."
+   },
+   {
+    "k": "h",
+    "t": "ANMAT registration documentation requirements for the DoC route include:"
+   },
+   {
+    "k": "li",
+    "t": "National Class I & II registration fee receipt"
+   },
+   {
+    "k": "li",
+    "t": "Registration form"
+   },
+   {
+    "k": "li",
+    "t": "Current GMP certification"
+   },
+   {
+    "k": "li",
+    "t": "Test declaration"
+   },
+   {
+    "k": "li",
+    "t": "Risk management report should be available if requested"
+   },
+   {
+    "k": "h",
+    "t": "Full technical review pathway (Class III and IV devices)"
+   },
+   {
+    "k": "p",
+    "t": "Applies to all Class III and IV devices. This route requires full technical evaluation by ANMAT. The review includes assessment of labeling, testing, GMP compliance, performance and safety data, and risk management documentation. Approval is issued through a formal administrative act."
+   },
+   {
+    "k": "h",
+    "t": "Documentation requirements for the technical review pathway include:"
+   },
+   {
+    "k": "li",
+    "t": "National Class III or IV registration fee receipt"
+   },
+   {
+    "k": "li",
+    "t": "ANMAT Registration form"
+   },
+   {
+    "k": "li",
+    "t": "Current GMP certification"
+   },
+   {
+    "k": "li",
+    "t": "Labeling compliant with Disposición 64/2025"
+   },
+   {
+    "k": "li",
+    "t": "Instructions for Use"
+   },
+   {
+    "k": "li",
+    "t": "Technical reports"
+   },
+   {
+    "k": "li",
+    "t": "Original test reports demonstrating compliance with essential safety and performance requirements (Provision 4306/99 and other applicable regulations)"
+   },
+   {
+    "k": "li",
+    "t": "Risk management report"
+   },
+   {
+    "k": "h",
+    "t": "Important details"
+   },
+   {
+    "k": "li",
+    "t": "Validity: Registrations are valid for 5 years before renewal must be requested."
+   },
+   {
+    "k": "li",
+    "t": "In-country representation: Foreign manufacturers must appoint a local Authorized Agent in Argentina (AAR). The AAR is a legal entity in Argentina who will assume the registration holder role, manage submissions, and act as a regulatory liaison."
+   },
+   {
+    "k": "li",
+    "t": "Translation: All documentation, labeling and IFUs must be in Spanish (or sworn translation) for Argentina."
+   },
+   {
+    "k": "li",
+    "t": "Quality management system / GMP: Manufacturers need to demonstrate compliance with ISO 13485 and ANMAT's GMP requirements; inspections may apply for Class III/IV devices depending on prior authorizations in other markets. Devices approved for sale in the US, Canada, EU, Australia, Japan, and South Korea do not require GMP inspection."
+   },
+   {
+    "k": "q",
+    "t": "What are the regulatory pathways for medical devices and IVDs in Argentina?"
+   },
+   {
+    "k": "p",
+    "t": "Argentina uses a risk-based system under ANMAT and the RPPMT. Certain Class I devices follow a sworn statement pathway. Other Class I devices and all Class II devices require a Declaration of Conformity. Class III and Class IV devices undergo a full technical review, including evaluation of labeling, testing, GMP evidence, and risk management documentation."
+   },
+   {
+    "k": "q",
+    "t": "What documentation is required to register a medical device with ANMAT?"
+   },
+   {
+    "k": "p",
+    "t": "Documentation varies by risk classification but typically includes a registration fee receipt, registration form, current GMP certification, and testing declarations. Class II devices must include a risk management report. Class III and IV devices require a full technical file, including labeling per ANMAT specifications, IFUs, technical reports, and original test data demonstrating compliance with essential safety and performance requirements."
+   },
+   {
+    "k": "q",
+    "t": "What is a Legal Representative in Argentina and why do you need one?"
+   },
+   {
+    "k": "p",
+    "t": "Foreign manufacturers must appoint an Argentina-based Legal Representative, called an Argentina Authorized Representative (AAR), who serves as the registration holder and the official point of contact with ANMAT. This representative is responsible for submitting applications, maintaining the registration, managing updates and variations, and ensuring post-market and vigilance obligations are met. The AAR also acts as your importer of record and manages import logistics."
+   },
+   {
+    "k": "h",
+    "t": "FAQ"
+   },
+   {
+    "k": "h",
+    "t": "Primary regulatory authority:"
+   },
+   {
+    "k": "p",
+    "t": "The primary regulatory authority for medical device registration in Argentina is the National Administration of Drugs, Foods, and Medical Devices (ANMAT). ANMAT oversees the regulatory framework for medical devices, ensuring compliance with local requirements."
+   },
+   {
+    "k": "h",
+    "t": "How are medical devices classified:"
+   },
+   {
+    "k": "p",
+    "t": "Medical devices in Argentina are classified into four risk categories, from Class I (low risk) to Class IV (high risk). This classification system aligns with the European Union's standards, helping define the regulatory requirements for each type of device under ANMAT Argentina."
+   },
+   {
+    "k": "h",
+    "t": "Key requirements for foreign manufacturers:"
+   },
+   {
+    "k": "p",
+    "t": "Foreign manufacturers must: 1. Classify and group their products to determine the appropriate regulatory pathway. 2. Appoint a local registration holder authorized by ANMAT, which is essential for importing and clearing shipments through customs. 3. Navigate the registration process with ANMAT, typically facilitated by a local company if the manufacturer does not have a local presence."
+   },
+   {
+    "k": "h",
+    "t": "Why appointing a local registration holder is important:"
+   },
+   {
+    "k": "p",
+    "t": "Appointing a local registration holder authorized by ANMAT is crucial because it allows foreign manufacturers to import and clear shipments through customs. This local representative ensures that all Argentina medical device regulations are met and facilitates the registration process with ANMAT."
+   }
+  ],
+  "source": "https://www.pureglobal.com/markets/argentina",
+  "captured": "2026-07-08"
+ },
+ "Hong Kong": {
+  "country": "Hong Kong",
+  "title": "MDD Hong Kong Medical Device Registration",
+  "description": [
+   "Hong Kong has become a strategic operational hub for medical device companies looking to expand in Asia. MDD Hong Kong medical device registration is voluntary for certain classes of medical devices and IVDs. Foreign manufacturers pursuing MDD registration need a Local Responsible Person.",
+   "Registration is handled by Hong Kong's Medical Device Division (MDD). From its office in Hong Kong, Pure Global's local team delivers end-to-end regulatory support for medical device and IVD manufacturers seeking MDIS listing, including dossier preparation, labeling compliance, adverse event reporting, regulatory strategy, and in-country representation as the Local Responsible Person (LRP)."
+  ],
+  "key_numbers": [
+   {
+    "value": "$1.11b",
+    "metric": "MD Market size"
+   },
+   {
+    "value": "6.73%",
+    "metric": "MD Market CAGR"
+   },
+   {
+    "value": "$0.30b",
+    "metric": "IVD Market size"
+   },
+   {
+    "value": "3.77%",
+    "metric": "IVD Market CAGR"
+   },
+   {
+    "value": "19%",
+    "metric": "GDP"
+   },
+   {
+    "value": "20%",
+    "metric": "Aging Population"
+   }
+  ],
+  "how_to_title": "How to Register (List) a Medical Device in Hong Kong",
+  "how_to": [
+   {
+    "k": "h",
+    "t": "Navigating regulatory requirements in Hong Kong"
+   },
+   {
+    "k": "p",
+    "t": "Medical devices and IVDs in Hong Kong are overseen by the Medical Device Division (MDD). There are no specific statutory regulations governing medical devices in Hong Kong; key documents outlining the device \"registration\" (listing) processes and requirements are issued as Guidance Notes (GN) and Technical References (TR)."
+   },
+   {
+    "k": "h",
+    "t": "Key documents include:"
+   },
+   {
+    "k": "li",
+    "t": "GN-01 (Overview of MDACS) - https://www.mdd.gov.hk/filemanager/common/mdacs/GN-01-E.pdf"
+   },
+   {
+    "k": "li",
+    "t": "GN-02 (Listing Class II/III/IV General Medical Devices) - https://www.mdd.gov.hk/filemanager/common/mdacs/GN-02-E.pdf"
+   },
+   {
+    "k": "li",
+    "t": "GN-06 (Listing Class B/C/D IVD Medical Devices) - https://www.mdd.gov.hk/filemanager/common/mdacs/GN-06-E.pdf"
+   },
+   {
+    "k": "li",
+    "t": "GN-03 (Adverse Event Reporting by LRPs) - https://www.mdd.gov.hk/filemanager/common/mdacs/GN-03-E.pdf"
+   },
+   {
+    "k": "li",
+    "t": "TR-002 (STED) - https://www.mdd.gov.hk/filemanager/common/mdacs/TR002E.pdf"
+   },
+   {
+    "k": "li",
+    "t": "TR-004 (Essential Principles of Safety and Performance for Medical Devices) - https://www.mdd.gov.hk/filemanager/common/mdacs/TR004-2022-E.pdf"
+   },
+   {
+    "k": "p",
+    "t": "Hong Kong's framework is established under the Medical Device Administrative Control System (MDACS), which includes a device listing system (via the Medical Device Information System (MDIS)) and an adverse event reporting system. Device listing is voluntary, but listed devices are preferred for participation in public hospital tenders."
+   },
+   {
+    "k": "p",
+    "t": "All devices listed by manufacturers with no entity in Hong Kong need a Local Responsible Person (LRP). Only the LRP can submit the listing application, and the LRP has defined pre- and post-market obligations."
+   },
+   {
+    "k": "h",
+    "t": "Classification"
+   },
+   {
+    "k": "p",
+    "t": "Hong Kong classifies medical devices and IVDs in line with IMDRF principles. Medical devices are classified as Class I, II, III, and IV; IVDs are classified as Class A, B, C, and D."
+   },
+   {
+    "k": "h",
+    "t": "Regulatory pathways"
+   },
+   {
+    "k": "p",
+    "t": "MDD has established MDACS listing pathways for Class II/III/IV general medical devices and Class B/C/D IVDs, based on existing reference country approval and market history. Class I devices are not listed. MDACS listing requires a Conformity Assessment Certificate from an MDACS-accredited conformity assessment body (CAB). CAB review is not required for devices with approval in one of Hong Kong's approved reference markets: Australia, Canada, the European Union, Japan, the United States, Mainland China, South Korea, or Singapore."
+   },
+   {
+    "k": "h",
+    "t": "Standard MDACS listing route (with and without reference market approval)"
+   },
+   {
+    "k": "li",
+    "t": "Process: the LRP applies for inclusion into the List of Medical Devices via the MDIS."
+   },
+   {
+    "k": "h",
+    "t": "Documentation requirements:"
+   },
+   {
+    "k": "li",
+    "t": "Application form"
+   },
+   {
+    "k": "li",
+    "t": "Evidence of quality management system (QMS) consistent with ISO 13485"
+   },
+   {
+    "k": "li",
+    "t": "Technical documentation in STED format"
+   },
+   {
+    "k": "li",
+    "t": "Classification rationale"
+   },
+   {
+    "k": "li",
+    "t": "Labeling samples (photos only)"
+   },
+   {
+    "k": "li",
+    "t": "Conformity Assessment Certificate from MDACS-accredited certification body"
+   },
+   {
+    "k": "li",
+    "t": "Devices with valid approvals in reference markets must include relevant documentation (an Essential Principles checklist is also required)"
+   },
+   {
+    "k": "li",
+    "t": "Timeline: vetting and approval should be completed within 12 weeks of submission, but actual review times can be much longer (up to 24 months)."
+   },
+   {
+    "k": "li",
+    "t": "Renewal: Listing approval (including conditional approval) is valid for 5 years. Renewal applications should be submitted between 12 weeks and 1 year before expiry; if the listing expires, a new application is required."
+   },
+   {
+    "k": "p",
+    "t": "Expedited Approval Scheme (selected Class II/III/IV general medical devices; Class B/C/D IVDs)"
+   },
+   {
+    "k": "p",
+    "t": "MDD offers an Expedited Approval Scheme intended to streamline review for eligible MDACS listing applications."
+   },
+   {
+    "k": "li",
+    "t": "Criteria: No reported deaths/serious injury; no active recalls or field safety corrective actions; and two or more valid reference market approvals."
+   },
+   {
+    "k": "li",
+    "t": "Process: the LRP applies for inclusion into the List of Medical Devices via the MDIS."
+   },
+   {
+    "k": "h",
+    "t": "Documentation requirements:"
+   },
+   {
+    "k": "li",
+    "t": "Application form"
+   },
+   {
+    "k": "li",
+    "t": "Evidence of quality management system (QMS) consistent with ISO 13485"
+   },
+   {
+    "k": "li",
+    "t": "Technical documentation in STED format"
+   },
+   {
+    "k": "li",
+    "t": "Classification rationale"
+   },
+   {
+    "k": "li",
+    "t": "Labeling samples"
+   },
+   {
+    "k": "li",
+    "t": "Relevant documentation for approvals in two reference markets"
+   },
+   {
+    "k": "li",
+    "t": "Declaration of no global safety issues"
+   },
+   {
+    "k": "li",
+    "t": "Timeline: no official turnaround time, but applications are reviewed on a priority basis."
+   },
+   {
+    "k": "li",
+    "t": "Renewal: Listing approval is valid for 5 years. Renewal applications should be submitted between 12 weeks and 1 year before expiry; if the listing expires, a new application is required."
+   },
+   {
+    "k": "h",
+    "t": "Other MDACS listing requirements"
+   },
+   {
+    "k": "li",
+    "t": "Local Responsible Person (LRP): Mandatory for MDACS device listing submissions for manufacturers with no presence/entities in Hong Kong. The LRP is the applicant of record and must support MDD requests for additional information and inspection of originals/certified copies."
+   },
+   {
+    "k": "li",
+    "t": "No government application fee: MDD states no fee is charged for inclusion of devices into the MDACS lists (companies should still plan for third-party or operational costs)."
+   },
+   {
+    "k": "li",
+    "t": "Labelling and IFU package: Labeling and IFU can be in English, Chinese, or both. Devices intended for home or lay-use must be labeled in English and Chinese."
+   },
+   {
+    "k": "li",
+    "t": "Post-market obligations: LRPs must report adverse events within defined timeframes. Device tracking to the user level is required for certain device types."
+   },
+   {
+    "k": "q",
+    "t": "What documentation is required to list a medical device or IVD in Hong Kong?"
+   },
+   {
+    "k": "h",
+    "t": "Documentation requirements vary by device type (general vs IVD), risk class, and whether you pursue the standard route or the expedited scheme. A complete package commonly includes:"
+   },
+   {
+    "k": "li",
+    "t": "Technical documentation in STED format"
+   },
+   {
+    "k": "li",
+    "t": "Evidence demonstrating conformity to Essential Principles, including a CAB review certificate or marketing authorization documents from an approved reference market"
+   },
+   {
+    "k": "li",
+    "t": "Labeling samples and IFU"
+   },
+   {
+    "k": "li",
+    "t": "A clear classification rationale per MDACS rules"
+   },
+   {
+    "k": "li",
+    "t": "QMS evidence aligned to ISO 13485"
+   },
+   {
+    "k": "li",
+    "t": "For the Expedited Approval Scheme, documentation supporting the eligibility criteria and the required set of independent regulatory approvals"
+   },
+   {
+    "k": "q",
+    "t": "What is a Hong Kong Local Responsible Person (LRP) and why do you need one?"
+   },
+   {
+    "k": "p",
+    "t": "The Local Responsible Person (LRP) is the Hong Kong-based entity that serves as the official applicant for MDACS device listing and the primary regulatory liaison between the manufacturer and the MDD. An LRP is required for foreign manufacturers seeking registration; local manufacturers can also appoint an LRP to facilitate the process."
+   },
+   {
+    "k": "p",
+    "t": "The LRP submits and maintains device listing applications, ensures effective communication with users, distributors, and authorities, and maintains comprehensive supply and traceability records for at least the device lifetime or seven years, whichever is longer. They must operate a documented complaint handling system, arrange maintenance and service support where applicable, and implement tracking systems for specified high-risk devices, including annual surveillance reporting. The LRP is also responsible for reporting adverse events within defined timelines, notifying the MDD of recalls and field safety notices, managing corrective actions, and making records available for inspection upon request."
+   },
+   {
+    "k": "h",
+    "t": "FAQ"
+   },
+   {
+    "k": "q",
+    "t": "Is registration mandatory?"
+   },
+   {
+    "k": "p",
+    "t": "No. The registration (listing) system under MDACS is voluntary. However, the Department of Health encourages listing of Class II or higher medical devices and Class D IVD products as soon as possible."
+   },
+   {
+    "k": "q",
+    "t": "How are devices classified?"
+   },
+   {
+    "k": "p",
+    "t": "Medical devices are classified from Class I-IV; IVDs from A-D. The voluntary listing system specifically targets Class II or higher medical devices and Class D IVD products."
+   },
+   {
+    "k": "q",
+    "t": "Requirements for manufacturers without a Hong Kong business?"
+   },
+   {
+    "k": "p",
+    "t": "They must appoint a Local Responsible Person (LRP), who registers the products with the MDD and fulfills post-market surveillance responsibilities."
+   }
+  ],
+  "source": "https://www.pureglobal.com/markets/hong-kong",
+  "captured": "2026-07-08"
+ }
+}

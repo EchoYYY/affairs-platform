@@ -7,7 +7,7 @@ import Overview from "./pages/Overview";
 import Dashboard from "./pages/Dashboard";
 import Corpus from "./pages/Corpus";
 import DocumentDetail from "./pages/DocumentDetail";
-import Search from "./pages/Search";
+import KnowledgeHub from "./pages/KnowledgeHub";
 import Ask from "./pages/Ask";
 import Alerts from "./pages/Alerts";
 import Monitoring from "./pages/Monitoring";
@@ -22,7 +22,7 @@ const NAV = [
   { to: "/dashboard", label: "Dashboard", ico: "▤" },
   { section: "The 8 Pillars" },
   { to: "/monitoring", label: "Global Monitoring", ico: "📡" },
-  { to: "/corpus", label: "Document Intelligence", ico: "🧠" },
+  { to: "/corpus", label: "Regulatory Library", ico: "📚" },
   { to: "/alerts", label: "Intelligent Alerts", ico: "◉" },
   { to: "/impact", label: "Impact Assessment", ico: "🎯" },
   { to: "/insights", label: "Predictive Insights", ico: "📈" },
@@ -70,7 +70,7 @@ export default function App() {
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/insights" element={<Insights />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/search" element={<KnowledgeHub />} />
           <Route path="/workflow" element={<Workflow />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/ask" element={<Ask />} />
