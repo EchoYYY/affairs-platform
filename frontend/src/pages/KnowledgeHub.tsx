@@ -9,7 +9,9 @@ export default function KnowledgeHub() {
   const [facets, setFacets] = useState<RegFacets | null>(null);
   const [time, setTime] = useState("");   // time bucket key
   const [cost, setCost] = useState("");   // cost bucket key
-  const [selected, setSelected] = useState<string>("");
+  const [selected, setSelected] = useState<string>(
+    () => new URLSearchParams(window.location.search).get("country") ?? "",
+  );
 
   useEffect(() => {
     api.registration().then((d) => { setMarkets(d.markets); setFacets(d.facets); }).catch(() => {});
