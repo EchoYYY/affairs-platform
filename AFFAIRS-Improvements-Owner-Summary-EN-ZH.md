@@ -20,7 +20,7 @@ The improvements are grouped by urgency, not by difficulty. 'Now' items are smal
 
 | Improvement | What it means for you |
 |---|---|
-| Refresh the AI model setting | The AI features point at an older model name. Update it so they keep working reliably, and consider a cheaper AI model for the high-volume parts (scoring, Q&A) to lower running cost. |
+| Consider a newer AI model (optional) | The AI features use a valid but older-generation AI model — everything works as-is today, so this is an enhancement, not a fix. Moving to the current model can improve answer quality, and using a cheaper model for the high-volume parts (scoring, Q&A) can lower running cost. An older software library used to talk to the AI is worth updating at the same time, then re-testing. |
 | Turn on (or remove) the hidden search page | A document search feature was fully built but has no button to reach it — the menu opens a different page instead. Either add it to the menu or remove the leftover, so nothing is half-finished. |
 | Stop alerts over-triggering for some regions | The alert system currently treats the US, EU, UK and 'International' as always relevant, even if you don't operate there — which adds noise. Make it follow your configured markets. |
 | Switch on the 'ignore low-value alerts' filter | A setting meant to hide unimportant updates was never actually applied, so every monitored item becomes an alert. Turning it on (or deciding a threshold) reduces clutter. |
@@ -77,7 +77,7 @@ AFFAIRS 会读取您的医疗器械法规文档库，使其可被检索，并用
 
 | 改进项 | 对您意味着什么 |
 |---|---|
-| 更新 AI 模型设置 | 各项 AI 功能目前指向一个较旧的模型名称。请更新它以保证功能稳定运行；同时可考虑对高频使用的部分（评分、问答）改用更经济的 AI 模型，以降低运行成本。 |
+| 考虑改用更新的 AI 模型（可选） | 各项 AI 功能目前使用的是一个有效但较旧版本的 AI 模型 —— 目前一切正常，因此这属于优化而非修复。改用当前最新模型可以提升回答质量；对高频使用的部分（评分、问答）改用更经济的模型可以降低运行成本。用于对接 AI 的一个较旧的软件库也值得一并更新，然后重新测试。 |
 | 启用（或移除）隐藏的搜索页面 | 文档搜索功能已完整开发，但没有入口按钮 —— 菜单打开的是另一个页面。请将其加入菜单，或移除这段遗留代码，避免功能半成品状态。 |
 | 避免部分地区的预警过度触发 | 预警系统目前把美国、欧盟、英国和“国际”一律视为相关，即使您并不在这些地区运营，从而增加了噪音。应改为遵循您所配置的市场。 |
 | 启用“忽略低价值预警”的过滤 | 一个用于隐藏不重要更新的设置从未真正生效，导致每一条被监控的信息都变成预警。启用它（或设定一个阈值）可减少干扰。 |
