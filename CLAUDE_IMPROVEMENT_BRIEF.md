@@ -100,8 +100,9 @@ line numbers drift.
 the only caller of `api.search()`, but it is **not routed** — the `/search` nav entry renders
 `KnowledgeHub.tsx` (a registration-timeline lookup) instead. The product's headline capability
 (semantic search over the corpus) has no front door. **Decide with the owner:** wire `Search.tsx`
-into the nav/routes, or delete it as dead code. (Note: an "Ask the corpus" RAG widget *is* reachable
-via `RegChat` embedded in Corpus — but keyword/semantic search itself is not.)
+into the nav/routes, or delete it as dead code. (Note: RAG Q&A *is* reachable — via a dedicated
+**Ask the Corpus** page at `/ask` *and* the `RegChat` widget embedded in Corpus — but keyword/semantic
+search itself is not.)
 
 **P0-2 · Alert `region_match` ignores the profile.** In `alerts/score.py` the rule scorer treats an
 update as region-relevant if its region is in the profile **or** literally one of
@@ -149,25 +150,36 @@ intended per-document source dedup.)
 **P1-7 · Search cache can serve stale vectors.** `search/semantic.py` caches the embedding matrix and
 invalidates only when the chunk **row count** changes. Editing a chunk's text/embedding without
 changing the count serves stale vectors until restart. Key the cache on a content signature
-(e.g. `COUNT(*)` + `MAX(rowid)`, or a version counter bumped on every write).
+(e.g. `COUNT(*)` + `MAX(rowid)`, or a version counter bumped on every write). (Verified: an
+`invalidate_cache()` helper exists in `search/semantic.py` but is **called nowhere** in the backend —
+dead code today; the row-count check is the only invalidation path.)
 
 **P1-8 · Frontend swallows errors silently.** Almost every page does
 `api.xxx().then(setX).catch(() => {})` (only `DocumentDetail.tsx` surfaces errors). Failures show as
 blank screens. Introduce a small shared fetch/error hook (or at minimum a toast/banner) and adopt it
 across pages.
 
-**P1-9 · "Graceful degradation" without a key isn't true for interpretation.** The README says the
-Claude layer degrades gracefully, but `interpret_corpus()`/`interpret_one()` **raise** without a key.
-Either make interpretation a soft skip (log + continue) or fix the README and API error messaging so
-behavior matches the promise. (Ingest/search genuinely do work without a key — that part is fine.)
+**P1-9 · Interpretation raises on a *direct* call without a key (minor — README is essentially accurate).**
+`interpret_corpus()`/`interpret_one()` do raise a `RuntimeError` when no key is set — but the user-facing
+paths already degrade cleanly: `ingest_service.run_sync()` gates interpretation on `claude_enabled` (silent
+skip), and `POST /api/documents/{id}/interpret` returns a clean `400`. So the README's "interpretation is
+simply skipped" holds for normal use; the only rough edge is a bare `RuntimeError` if code calls the
+corpus-interpret functions *directly* (e.g. a CLI/script) without first checking `claude_enabled`. Low
+priority: either soft-skip inside those functions too, or leave as-is (the raised message is explicit).
+(Ingest/search genuinely work without a key.) *[Downgraded from the original "degradation isn't true"
+framing after 2026-07-17 verification — see the log below.]*
 
-**P1-10 · Fragile JSON filter.** The `area` facet filter in `api/queries.py` uses
-`LIKE '%"area"%'` against the JSON-encoded `regulatory_areas` column — it can mis-match when one area
-name is a substring of another. Use SQLite `json_each`/`json_extract` containment or a normalized
-join table.
+**P1-10 · Fragile JSON filter (rationale corrected 2026-07-17).** The `area` facet filter in
+`api/queries.py` matches `regulatory_areas LIKE '%"area"%'` against the JSON-encoded column. The
+double-quote bounding **does** prevent the naive "one area name is a substring of another" case (the stored
+element `"Software/SaMD"` does not contain the literal `"Software"`), so that specific failure mode from the
+original write-up does not actually occur. The genuine fragility is different: `LIKE` treats any `%` or `_`
+inside an area name as a wildcard, and the match depends on the exact JSON serialization (spacing/escaping).
+The fix is the same regardless — use SQLite `json_each`/`json_extract` containment or a normalized join
+table instead of `LIKE` over serialized JSON.
 
 **P1-11 · Brittle HTML scrapers with silent failure.** `monitor/fetch.py`'s `html` adapter is a
-hand-rolled regex tokenizer over 6 sites; any markup change breaks it silently. Surface per-source
+hand-rolled regex tokenizer over 8 HTML-type sources; any markup change breaks it silently. Surface per-source
 `last_status`/failure counts to the UI and log parse failures, so breakage is visible rather than
 "no new updates."
 
@@ -228,3 +240,22 @@ Document this contract near the code.
 
 For each PR: state what changed, why, how you verified it (commands + observed output), and anything
 you deliberately left out. Flag anything that looked intentional so the owner can decide.
+
+---
+
+## Verification log (2026-07-17)
+
+All 21 items were re-checked against the current tree (local-model first pass + adjudicated read).
+Full detail in `VERIFICATION_REPORT.md`. Result: **18 confirmed as-written, 3 corrected, 0 removed.**
+
+- **P0-1** — enriched: RAG Q&A is reachable via *both* the `/ask` page and RegChat-in-Corpus (only
+  semantic search lacks a front door).
+- **P1-7** — enriched: `invalidate_cache()` exists but is called nowhere (dead code).
+- **P1-9** — **downgraded**: the normal paths already guard on `claude_enabled` (silent skip / clean 400),
+  so the README is essentially accurate; only a *direct* call raises. Now a minor item, not a trust bug.
+- **P1-10** — **rationale corrected**: the quoted `LIKE` prevents the substring-of-another case originally
+  cited; the real fragility is `LIKE` wildcard metacharacters + serialization dependence. (Item still valid.)
+- **P1-11** — **count corrected**: 8 HTML-type sources, not 6.
+
+Everything else (P0-2, P0-3, P0-4, P1-5, P1-6, P1-8, P1-12, P1-13, P1-14, P2-15…P2-21) verified accurate
+as written.
